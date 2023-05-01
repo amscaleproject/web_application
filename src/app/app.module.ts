@@ -17,7 +17,7 @@ import { AlertService, AuthenticationService, UserService, WebSocketService } fr
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
-import { TreeComponent } from './tree';
+import { TestwsComponent } from './testws';
 
 
 @NgModule({
@@ -35,7 +35,7 @@ import { TreeComponent } from './tree';
         HomeComponent,
         LoginComponent,
         RegisterComponent,
-        TreeComponent
+        TestwsComponent
     ],
     providers: [
         AuthGuard,

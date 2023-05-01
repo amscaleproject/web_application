@@ -1,14 +1,12 @@
-// frontend/src/app/websocket.service.ts
 import { Injectable } from '@angular/core';
 import { webSocket, WebSocketSubject } from 'rxjs/webSocket';
 
-interface MessageData {
+export interface MessageData {
   message: string;
   time?: string;
 }
 
-/* const CHAT_URL = "ws://echo.websocket.org/"; */
-const CHAT_URL = "ws://172.17.0.1:5000/ws";
+const CHAT_URL = "ws://172.17.0.1:5000/tree";
 
 @Injectable({
   providedIn: 'root',
