@@ -1,18 +1,29 @@
 <!-- main app container -->
-<div class="jumbotron">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 offset-sm-3">
+<div class="fullWrap">
+    <div class="pageWrap">
+
+        <div class="header">
+            <div class="headerContainer">
+                <div class="mat-toolbar">
+                    Header
+                </div>
+            </div>
+        </div>
+
+        <main class="content noHeader">
+            <div class="app-content-container">
                 <alert></alert>
                 <router-outlet></router-outlet>
             </div>
+        </main>
+
+        <!-- credits -->
+        <div class="footer">
+            <div class="footerContainer">
+                <p>
+                    © AttikaMove™ 2021
+                </p>
+            </div>
         </div>
     </div>
-</div>
-
-<!-- credits -->
-<div class="text-center">
-    <p>
-        Footer text.
-    </p>
 </div>

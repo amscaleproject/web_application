@@ -3,3 +3,127 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.fullWrap {
+  min-height: 100vh;
+}
+
+.pageWrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+}
+
+noHeader {
+  margin-top: 0;
+}
+
+.content {
+  flex: 1;
+  background: #f8f8f8;
+  display: flex;
+  align-items: stretch;
+ }
+
+.app-content-container {
+  flex: 6;
+}
+
+.login-container {
+  background-image: url('assets/bg_login.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  width: 100%;
+  background: #0b486b;
+  position: relative;
+  bottom: 0;
+}
+
+.footerContainer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerContainer p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.alert {
+  display: none;
+}
+
+.login-card {
+  font-family: Lato,Roboto,"Helvetica Neue",sans-serif;
+  box-shadow: 6px 0 50px rgb(51 51 51 / 76%);
+  border-radius: 20px;
+  min-height: 400px;
+  padding: 30px;
+  max-width: 50%;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  flex: 0 0 50em;
+}
+
+.header {
+  height: 60px;
+  position: absolute;
+  width: 100%;
+}
+
+.mat-toolbar {
+  background-image: url('assets/wave-image.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  font-family: Lato,Roboto,"Helvetica Neue",sans-serif;
+  ackground: #0b486b;
+  color: #fff;
+  min-height: 64px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content_home {
+    flex: 1;
+    margin-top: 64px;
+    background: #f8f8f8;
+    display: flex;
+    align-items: stretch;
+}
+
+.app-side-menu {
+  flex: 1.5;
+  background: #0b486b;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  min-width: 170px;
+}
+
+.app-content-container {
+  flex: 6;
+}
