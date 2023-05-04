@@ -127,3 +127,14 @@ noHeader {
 .app-content-container {
   flex: 6;
 }
+
+.header-actions-container {
+  flex: 2;
+  position: relative;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 16px 0 0;
+  overflow: hidden;
+}
