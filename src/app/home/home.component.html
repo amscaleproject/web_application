@@ -1,21 +1,475 @@
-<div class="header">
-    <div class="headerContainer">
-        <div class="mat-toolbar">
-            Header
-            <div class="header-actions-container">
-                <a [routerLink]="['/login']">Logout</a>
+
+<div _ngcontent-skr-c0="" class="fullWrap">
+    <div _ngcontent-skr-c0="" class="pageWrap"><!----><!---->
+        <div _ngcontent-skr-c0="" class="header ng-star-inserted" _nghost-skr-c2="">
+            <div _ngcontent-skr-c2="" class="mat-toolbar mat-primary mat-toolbar-multiple-rows"
+                 color="primary">
+                <div _ngcontent-skr-c2="" class="toolbar-overlay"></div>
+                <div _ngcontent-skr-c2="" class="mat-toolbar-row">
+                    <div _ngcontent-skr-c2="" class="header-title-container">
+                        <a _ngcontent-skr-c2=""
+                            data-test="headerAttikaMoveLogo"
+                            routerlink="/home"
+                            href="/">
+                             LogoHome
+                            </a>
+                        <p _ngcontent-skr-c2="">WaveRunner <span _ngcontent-skr-c2="">45.80.47.150</span></p></div>
+                    <div _ngcontent-skr-c2="" class="header-actions-container">
+                        <div _ngcontent-skr-c2="" class="actions-overlay-one"></div>
+                        <div _ngcontent-skr-c2="" class="actions-overlay-two"></div>
+                        <div _ngcontent-skr-c2="" class="navigation-items">
+                            <div _ngcontent-skr-c2=""><a _ngcontent-skr-c2="" data-test="headerDashboardLink"
+                                                         routerlink="/home" routerlinkactive="active"
+                                                         href="https://45.80.47.150:23443/home" class="active"><i
+                                    _ngcontent-skr-c2="" class="icon-home-icon"></i> Dashboard</a></div>
+                            <div _ngcontent-skr-c2=""><!----><a _ngcontent-skr-c2="" data-test="headerAlertsLink"
+                                                                routerlink="/alerts" routerlinkactive="active"
+                                                                href="https://45.80.47.150:23443/alerts"
+                                                                class="ng-star-inserted"><i _ngcontent-skr-c2=""
+                                                                                            class="icon-alerts-icon mat-badge mat-badge-overlap mat-badge-above mat-badge-after mat-badge-medium"
+                                                                                            data-test-headerunreadalertcount="1"><span
+                                    _ngcontent-skr-c2="" id="mat-badge-content-0"
+                                    class="mat-badge-content mat-badge-active">1</span></i> Alerts </a><!----></div>
+                            <div _ngcontent-skr-c2=""><a _ngcontent-skr-c2="" data-test="headerActivityLink"
+                                                         routerlink="/activity" routerlinkactive="active"
+                                                         href="https://45.80.47.150:23443/activity"><i
+                                    _ngcontent-skr-c2="" class="icon-activity-icon"></i> Activity</a></div>
+                        </div><!---->
+
+                        <div _ngcontent-skr-c2="" class="userDropdownContainer ng-star-inserted"
+                             data-test="headerUserDropdownMenu">
+                            <p _ngcontent-skr-c2="">
+                                <i _ngcontent-skr-c2=""
+                                   class="material-icons">
+                                    person_outline
+                                </i>
+    <!--                            admin-->
+                                <a [routerLink]="['/login']">Logout</a>
+                            </p>
+
+<!--                            <button _ngcontent-skr-c2="" aria-haspopup="true" mat-icon-button=""-->
+<!--                                    class="mat-icon-button"><span class="mat-button-wrapper"><i _ngcontent-skr-c2=""-->
+<!--                                                                                                class="material-icons">arrow_drop_down</i></span>-->
+<!--                                <div class="mat-button-ripple mat-ripple mat-button-ripple-round"-->
+<!--                                     matripple=""></div>-->
+<!--                                <div class="mat-button-focus-overlay"></div>-->
+<!--                            </button>-->
+                            <div _ngcontent-skr-c2="" class="ng-tns-c23-8"><!----></div>
+                        </div><!----></div>
+                </div>
             </div>
         </div>
+        <main _ngcontent-skr-c0="" class="content"><!---->
+            <div _ngcontent-skr-c0="" _nghost-skr-c3="" class="ng-star-inserted app-side-menu">
+                <div _ngcontent-skr-c3="" class="overlay-one"></div>
+                <div _ngcontent-skr-c3="" class="overlay-two"></div>
+                <div _ngcontent-skr-c3="" class="side-menu-content" data-test="sideMenu">
+                    <div _ngcontent-skr-c3="" class="menu-filters">
+                        <form _ngcontent-skr-c3="" novalidate="" class="ng-untouched ng-pristine ng-valid">
+                            <div _ngcontent-skr-c3="" appearance="outline"
+                                 class="form-field mat-form-field ng-tns-c9-7 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float ng-untouched ng-pristine ng-valid">
+                                <div class="mat-form-field-wrapper">
+                                    <div class="mat-form-field-flex"><!----><!---->
+                                        <div class="mat-form-field-outline ng-tns-c9-7 ng-star-inserted">
+                                            <div class="mat-form-field-outline-start"></div>
+                                            <div class="mat-form-field-outline-gap"></div>
+                                            <div class="mat-form-field-outline-end"></div>
+                                        </div>
+                                        <div class="mat-form-field-outline mat-form-field-outline-thick ng-tns-c9-7 ng-star-inserted">
+                                            <div class="mat-form-field-outline-start"></div>
+                                            <div class="mat-form-field-outline-gap"></div>
+                                            <div class="mat-form-field-outline-end"></div>
+                                        </div><!---->
+                                        <div class="mat-form-field-infix"><input _ngcontent-skr-c3=""
+                                                                                 autocomplete="off"
+                                                                                 class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-valid"
+                                                                                 data-test="sideMenuSearchInput"
+                                                                                 formcontrolname="search"
+                                                                                 matinput="" name="search"
+                                                                                 placeholder="Search" type="text"
+                                                                                 id="mat-input-0"
+                                                                                 aria-invalid="false"
+                                                                                 aria-required="false"><span
+                                                class="mat-form-field-label-wrapper"><!----></span></div><!---->
+                                    </div><!---->
+                                    <div class="mat-form-field-subscript-wrapper"><!----><!---->
+                                        <div class="mat-form-field-hint-wrapper ng-tns-c9-7 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
+                                             style="opacity: 1; transform: translateY(0%);"><!---->
+                                            <div class="mat-form-field-hint-spacer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!----></form>
+                        <div _ngcontent-skr-c3="" aria-label="Menu Expand"
+                             class="mat-button-toggle-group mat-button-toggle-group-appearance-standard"
+                             name="menuExpand" role="group" aria-disabled="false">
+                            <div _ngcontent-skr-c3=""
+                                 class="mat-button-toggle mat-button-toggle-appearance-standard"
+                                 value="expand" tabindex="-1" id="mat-button-toggle-1">
+                                <button class="mat-button-toggle-button" type="button"
+                                        id="mat-button-toggle-1-button" tabindex="0" aria-pressed="false"
+                                        name="menuExpand">
+                                    <div class="mat-button-toggle-label-content">Expand All <i _ngcontent-skr-c3=""
+                                                                                               class="icon-expand-icon"></i>
+                                    </div>
+                                </button>
+                                <div class="mat-button-toggle-focus-overlay"></div>
+                                <div class="mat-button-toggle-ripple mat-ripple" matripple=""></div>
+                            </div>
+                            <div _ngcontent-skr-c3=""
+                                 class="mat-button-toggle mat-button-toggle-appearance-standard"
+                                 value="collapse" tabindex="-1" id="mat-button-toggle-2">
+                                <button class="mat-button-toggle-button" type="button"
+                                        id="mat-button-toggle-2-button" tabindex="0" aria-pressed="false"
+                                        name="menuExpand">
+                                    <div class="mat-button-toggle-label-content">Collapse All <i
+                                            _ngcontent-skr-c3="" class="icon-collapse-icon"></i></div>
+                                </button>
+                                <div class="mat-button-toggle-focus-overlay"></div>
+                                <div class="mat-button-toggle-ripple mat-ripple" matripple=""></div>
+                            </div>
+                        </div>
+                    </div><!----><!---->
+                    <div _ngcontent-skr-c3="" class="menu-tree mat-tree ng-star-inserted" role="tree"><!---->
+                        <div _ngcontent-skr-c3="" class="mat-tree-node ng-star-inserted"
+                             mattreenodetoggle="" aria-expanded="false" aria-level="0" role="treeitem">
+                            <li _ngcontent-skr-c3="" class="mat-tree-node sds">
+                                <button _ngcontent-skr-c3="" disabled="true" mat-icon-button=""
+                                        class="mat-icon-button"><span class="mat-button-wrapper"></span>
+                                    <div class="mat-button-ripple mat-ripple mat-button-ripple-round"
+                                         matripple=""></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button>
+                                <i _ngcontent-skr-c3="" class="icon-sds-icon"></i><a _ngcontent-skr-c3=""
+                                                                                     class="menu-item"
+                                                                                     data-test="sideMenuLeaf"
+                                                                                     routerlinkactive="active"
+                                                                                     data-test-entity="SDServers"
+                                                                                     href="https://45.80.47.150:23443/sds/list"><span
+                                    _ngcontent-skr-c3="">SDServers</span></a><!---->
+                                <div _ngcontent-skr-c3="" class="menu-total-tags ng-star-inserted"
+                                     data-test="entityCount" data-test-entity-type="sds">0
+                                </div><!----><!----><!----></li>
+                        </div>
+                        <div _ngcontent-skr-c3="" class="mat-nested-tree-node ng-star-inserted"
+                             aria-expanded="false" role="group">
+                            <li _ngcontent-skr-c3="">
+                                <div _ngcontent-skr-c3="" class="mat-tree-node pool">
+                                    <button _ngcontent-skr-c3="" data-test="sideMenuExpandableNodeExpandButton"
+                                            mat-icon-button="" mattreenodetoggle="" class="mat-icon-button"
+                                            data-test-entity="Pools" aria-label="toggle Pools"><span
+                                            class="mat-button-wrapper"><i _ngcontent-skr-c3=""
+                                                                          class="icon-expand-single-icon"></i></span>
+                                        <div class="mat-button-ripple mat-ripple mat-button-ripple-round"
+                                             matripple=""></div>
+                                        <div class="mat-button-focus-overlay"></div>
+                                    </button>
+                                    <i _ngcontent-skr-c3="" class="icon-pool-icon"></i><a _ngcontent-skr-c3=""
+                                                                                          class="menu-item"
+                                                                                          data-test="sideMenuExpandableNode"
+                                                                                          routerlinkactive="active"
+                                                                                          data-test-entity="Pools"
+                                                                                          href="https://45.80.47.150:23443/pool/list"><span
+                                        _ngcontent-skr-c3="">Pools</span></a><!---->
+                                    <div _ngcontent-skr-c3="" class="menu-total-tags ng-star-inserted"
+                                         data-test="entityCount" data-test-entity-type="pool">1
+                                    </div>
+                                </div>
+                                <ul _ngcontent-skr-c3="" class="menu-tree-invisible"><!---->
+                                    <div _ngcontent-skr-c3="" class="mat-tree-node ng-star-inserted"
+                                         mattreenodetoggle="" aria-expanded="false" aria-level="0"
+                                         role="treeitem">
+                                        <li _ngcontent-skr-c3="" class="mat-tree-node pool">
+                                            <button _ngcontent-skr-c3="" disabled="true" mat-icon-button=""
+                                                    class="mat-icon-button"><span class="mat-button-wrapper"></span>
+                                                <div class="mat-button-ripple mat-ripple mat-button-ripple-round"
+                                                     matripple=""></div>
+                                                <div class="mat-button-focus-overlay"></div>
+                                            </button>
+                                            <i _ngcontent-skr-c3="" class="icon-pool-icon"></i><a
+                                                _ngcontent-skr-c3="" class="menu-item" data-test="sideMenuLeaf"
+                                                routerlinkactive="active" data-test-entity="First pool"
+                                                href="https://45.80.47.150:23443/pool/eb0801d5-614f-907b-4175-574d89018661"><span
+                                                _ngcontent-skr-c3="">First pool</span></a><!---->
+                                            <div _ngcontent-skr-c3="" class="menu-total-tags ng-star-inserted"
+                                                 data-test="entityCount" data-test-entity-type="pool">0 Nodes
+                                            </div><!----><!----><!----></li>
+                                    </div>
+                                </ul>
+                            </li>
+                        </div>
+                        <div _ngcontent-skr-c3="" class="mat-tree-node ng-star-inserted"
+                             mattreenodetoggle="" aria-expanded="false" aria-level="0" role="treeitem">
+                            <li _ngcontent-skr-c3="" class="mat-tree-node node">
+                                <button _ngcontent-skr-c3="" disabled="true" mat-icon-button=""
+                                        class="mat-icon-button"><span class="mat-button-wrapper"></span>
+                                    <div class="mat-button-ripple mat-ripple mat-button-ripple-round"
+                                         matripple=""></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button>
+                                <i _ngcontent-skr-c3="" class="icon-node-icon"></i><a _ngcontent-skr-c3=""
+                                                                                      class="menu-item"
+                                                                                      data-test="sideMenuLeaf"
+                                                                                      routerlinkactive="active"
+                                                                                      data-test-entity="View All Nodes"
+                                                                                      href="https://45.80.47.150:23443/node/list"><span
+                                    _ngcontent-skr-c3="">View All Nodes</span></a><!---->
+                                <div _ngcontent-skr-c3="" class="menu-total-tags ng-star-inserted"
+                                     data-test="entityCount" data-test-entity-type="node">0
+                                </div><!----><!----><!----></li>
+                        </div>
+                        <div class="testDataJsonContainer">
+                            Test data json {{ WsService.receivedData?.properties?.check?.type }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div _ngcontent-skr-c0="" _nghost-skr-c4="" class="app-content-container">
+                <router-outlet _ngcontent-skr-c0=""></router-outlet>
+                <div _nghost-skr-c13="" class="ng-star-inserted app-page-home">
+                    <div _ngcontent-skr-c13="" class="home-container">
+                        <div _ngcontent-skr-c13="" class="page-header list-page">
+                            <div _ngcontent-skr-c13="" class="header-links">
+                                <h1 _ngcontent-skr-c13="">Dashboard</h1>
+                            </div>
+                        </div>
+                        <div _ngcontent-skr-c13="" class="stats-wrapper">
+                            <div _ngcontent-skr-c13="" class="withLink ng-tns-c14-1 app-stats-container"
+                                 routerlink="/pool/list" _nghost-skr-c14="" tabindex="0">
+                                <div _ngcontent-skr-c14=""
+                                     class="container blue ng-trigger ng-trigger-slideInLeftOnEnter">
+                                    <div _ngcontent-skr-c14="" class="container-overlay"></div>
+                                    <i _ngcontent-skr-c13="" class="icon-pool-icon"></i>
+                                    <div _ngcontent-skr-c13="" class="stat-number" data-test="totalPoolCount">1
+                                    </div>
+                                    <div _ngcontent-skr-c13="" class="stat-unit"><a _ngcontent-skr-c13=""
+                                                                                    routerlink="/pool/list"
+                                                                                    href="https://45.80.47.150:23443/pool/list">Pools</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div _ngcontent-skr-c13="" class="withChart withLink ng-tns-c14-2 app-stats-container"
+                                 routerlink="/sds/list" _nghost-skr-c14="" tabindex="0">
+                                <div _ngcontent-skr-c14=""
+                                     class="container purple ng-trigger ng-trigger-slideInLeftOnEnter">
+                                    <div _ngcontent-skr-c14="" class="container-overlay"></div>
+                                    <div _ngcontent-skr-c13="" class="chart-container">
+                                        <div _ngcontent-skr-c13="">
+                                            <div class="ng-tns-c19-6">
+                                                <div class="ngx-charts-outer ng-trigger ng-trigger-animationState"
+                                                     style="width: 235px;">
+                                                    <svg class="ngx-charts" width="235" height="200">
+                                                        <g class="pie-chart chart"
+                                                           transform="translate(117.5, 100)">
+                                                            <g ngx-charts-pie-series=""><!---->
+                                                                <g class="ng-star-inserted" style=""><!---->
+                                                                    <g ngx-charts-pie-arc="" ngx-tooltip="">
+                                                                        <g class="arc-group"><!---->
+                                                                            <path class="arc" fill="#6121aa"
+                                                                                  style="pointer-events: auto;"
+                                                                                  d="M4.898587196589413e-15,-80L2.9391523179536475e-15,-48Z"></path>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                                <g class="ng-star-inserted" style=""><!---->
+                                                                    <g ngx-charts-pie-arc="" ngx-tooltip="">
+                                                                        <g class="arc-group"><!---->
+                                                                            <path class="arc" fill="#0b486b"
+                                                                                  style="pointer-events: auto;"
+                                                                                  d="M4.898587196589413e-15,-80L2.9391523179536475e-15,-48Z"></path>
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </svg><!----><!---->
+                                                    <div
+                                                            class="chart-legend ng-tns-c19-6 ng-star-inserted"
+                                                            style="">
+                                                        <div style="width: 235px;"><!---->
+                                                            <div class="legend-wrap">
+                                                                <ul class="legend-labels horizontal-legend"
+                                                                    style="max-height: 155px;"><!---->
+                                                                    <li class="legend-label ng-star-inserted">
+                                                                        <div><span tabindex="-1"
+                                                                                   title="On"><span
+                                                                                class="legend-label-color"
+                                                                                style="background-color: rgb(97, 33, 170);"></span><span
+                                                                                class="legend-label-text"> On </span></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="legend-label ng-star-inserted">
+                                                                        <div><span tabindex="-1"
+                                                                                   title="Off"
+                                                                                   class=""><span
+                                                                                class="legend-label-color"
+                                                                                style="background-color: rgb(11, 72, 107);"></span><span
+                                                                                class="legend-label-text"> Off </span></span>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div _ngcontent-skr-c13="" class="stat-number" data-test="totalSdsCount">0</div>
+                                    <div _ngcontent-skr-c13="" class="stat-unit"><a _ngcontent-skr-c13=""
+                                                                                    routerlink="/sds/list"
+                                                                                    href="https://45.80.47.150:23443/sds/list">SDServers</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div _ngcontent-skr-c13="" class="withLink ng-tns-c14-3 app-stats-container"
+                                 routerlink="/node/list" _nghost-skr-c14="" tabindex="0">
+                                <div _ngcontent-skr-c14=""
+                                     class="container green ng-trigger ng-trigger-slideInLeftOnEnter">
+                                    <div _ngcontent-skr-c14="" class="container-overlay"></div>
+                                    <i _ngcontent-skr-c13="" class="icon-node-icon"></i>
+                                    <div _ngcontent-skr-c13="" class="stat-number" data-test="totalNodeCount">0
+                                    </div>
+                                    <div _ngcontent-skr-c13="" class="stat-unit"><a _ngcontent-skr-c13=""
+                                                                                    routerlink="/node/list"
+                                                                                    href="https://45.80.47.150:23443/node/list">Nodes</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div _ngcontent-skr-c13="" _nghost-skr-c14="" class="ng-tns-c14-4 app-stats-container">
+                                <div _ngcontent-skr-c14=""
+                                     class="container green ng-trigger ng-trigger-slideInLeftOnEnter">
+                                    <div _ngcontent-skr-c14="" class="container-overlay"></div>
+                                    <i _ngcontent-skr-c13="" class="icon-node-icon unassigned-dot"></i>
+                                    <div _ngcontent-skr-c13="" class="stat-number"
+                                         data-test="totalUnassignedNodeCount">0
+                                    </div>
+                                    <div _ngcontent-skr-c13="" class="stat-unit">Nodes <span _ngcontent-skr-c13="">unassigned</span>
+                                    </div>
+                                </div>
+                            </div><!----></div>
+                        <div _ngcontent-skr-c13="" class="two-column-wrapper">
+                            <div _ngcontent-skr-c13="" class="activity-container">
+                                <div _ngcontent-skr-c13="" class="container-header"><h2 _ngcontent-skr-c13="">
+                                    Activity <span _ngcontent-skr-c13="" class="sub-header">Last 20 Logs</span></h2>
+                                    <button _ngcontent-skr-c13="" class="small mat-raised-button mat-gradient"
+                                            data-test="homePageViewAllActivityButton" mat-raised-button=""
+                                            matripple=""><span class="mat-button-wrapper"> View all Activity </span>
+                                        <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                        <div class="mat-button-focus-overlay"></div>
+                                    </button>
+                                </div><!---->
+                                <div _ngcontent-skr-c13="" class="container-list timeline ng-star-inserted"><!---->
+                                    <div _ngcontent-skr-c13="" class="ng-star-inserted">
+                                        <div _ngcontent-skr-c13="" _nghost-skr-c16="">
+                                            <div _ngcontent-skr-c16="" class="activityLogItem"
+                                                 data-test="activityLogItem"><p _ngcontent-skr-c16="" class="date">
+                                                02/03/2023 </p><!----><!----><p _ngcontent-skr-c16=""
+                                                                                class="description ng-star-inserted"
+                                                                                data-test="text"> Deleted Pool
+                                                zzz_zzz </p></div>
+                                        </div>
+                                    </div>
+                                    <div _ngcontent-skr-c13="" class="ng-star-inserted">
+                                        <div _ngcontent-skr-c13="" _nghost-skr-c16="">
+                                            <div _ngcontent-skr-c16="" class="activityLogItem"
+                                                 data-test="activityLogItem"><p _ngcontent-skr-c16="" class="date">
+                                                03/11/2023 </p><!----><!----><p _ngcontent-skr-c16=""
+                                                                                class="description ng-star-inserted"
+                                                                                data-test="text"> Deleted Pool
+                                                test0 </p></div>
+                                        </div>
+                                    </div>
+                                    <div _ngcontent-skr-c13="" class="ng-star-inserted">
+                                        <div _ngcontent-skr-c13="" _nghost-skr-c16="">
+                                            <div _ngcontent-skr-c16="" class="activityLogItem"
+                                                 data-test="activityLogItem"><p _ngcontent-skr-c16="" class="date">
+                                                Today at 6:14 PM </p><!----><p _ngcontent-skr-c16=""
+                                                                               class="description ng-star-inserted"
+                                                                               data-test="text"> Created Pool <a
+                                                    _ngcontent-skr-c16="" class="ng-star-inserted">First pool</a>
+                                            </p><!----></div>
+                                        </div>
+                                    </div>
+                                    <div _ngcontent-skr-c13="" class="ng-star-inserted">
+                                        <div _ngcontent-skr-c13="" _nghost-skr-c16="">
+                                            <div _ngcontent-skr-c16="" class="activityLogItem"
+                                                 data-test="activityLogItem"><p _ngcontent-skr-c16="" class="date">
+                                                02/03/2023 </p><!----><p _ngcontent-skr-c16=""
+                                                                         class="description ng-star-inserted"
+                                                                         data-test="text"> Created Pool <!----><a
+                                                    _ngcontent-skr-c16="" class="ng-star-inserted">zzz_zzz</a></p>
+                                                <!----></div>
+                                        </div>
+                                    </div>
+                                    <div _ngcontent-skr-c13="" class="ng-star-inserted">
+                                        <div _ngcontent-skr-c13="" _nghost-skr-c16="">
+                                            <div _ngcontent-skr-c16="" class="activityLogItem"
+                                                 data-test="activityLogItem"><p _ngcontent-skr-c16="" class="date">
+                                                01/23/2023 </p><!----><p _ngcontent-skr-c16=""
+                                                                         class="description ng-star-inserted"
+                                                                         data-test="text"> Created Pool <!----><a
+                                                    _ngcontent-skr-c16="" class="ng-star-inserted">test0</a></p>
+                                                <!----></div>
+                                        </div>
+                                    </div>
+                                </div><!----></div>
+                            <div _ngcontent-skr-c13="" class="alerts-container">
+                                <div _ngcontent-skr-c13="" class="container-header"><h2 _ngcontent-skr-c13="">Alerts
+                                    <span _ngcontent-skr-c13="" class="sub-header">Last 20 Alerts</span></h2>
+                                    <button _ngcontent-skr-c13="" class="small mat-raised-button mat-gradient"
+                                            data-test="homePageViewAllAlertsButton" mat-raised-button=""
+                                            matripple=""><span class="mat-button-wrapper"> View all Alerts </span>
+                                        <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                        <div class="mat-button-focus-overlay"></div>
+                                    </button>
+                                </div><!---->
+                                <div _ngcontent-skr-c13="" class="container-list list-items ng-star-inserted">
+                                    <!---->
+                                    <div _ngcontent-skr-c13="" class="ng-star-inserted">
+                                        <div _ngcontent-skr-c13="" _nghost-skr-c17="">
+                                            <div _ngcontent-skr-c17="" class="alertItem" data-test="alertItem"
+                                                 data-test-alert-isread="false" data-test-alert-id="1"><!---->
+                                                <button _ngcontent-skr-c17=""
+                                                        class="small read-button mat-raised-button mat-round ng-star-inserted"
+                                                        data-test="alertMarkAsReadButton" mat-raised-button=""
+                                                        matripple="" title="Mark as Read"><span
+                                                        class="mat-button-wrapper"><i _ngcontent-skr-c17=""
+                                                                                      class="material-icons">mail_outline</i></span>
+                                                    <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                                    <div class="mat-button-focus-overlay"></div>
+                                                </button><!---->
+                                                <div _ngcontent-skr-c17=""><p _ngcontent-skr-c17=""
+                                                                              class="time-stamp"> 01/18/2023 </p>
+                                                    <p _ngcontent-skr-c17=""> No waverunner log from previous
+                                                        cluster, so initializing empty cluster; path:
+                                                        /usr/local/tidalscale/opt/cluster.log </p></div>
+                                                <div _ngcontent-skr-c17="" class="alert-tags">
+                                                    <div _ngcontent-skr-c17="" class="alert-tag"><!----><!---->
+                                                        <!----></div><!----><!----><!----><!---->
+                                                    <button _ngcontent-skr-c17=""
+                                                            class="square mat-raised-button mat-secondary ng-star-inserted"
+                                                            data-test="deleteAlertButton" mat-raised-button=""
+                                                            matripple="" title="Delete Alert"><span
+                                                            class="mat-button-wrapper"><span _ngcontent-skr-c17=""
+                                                                                             class="material-icons">delete_outline</span></span>
+                                                        <div class="mat-button-ripple mat-ripple"
+                                                             matripple=""></div>
+                                                        <div class="mat-button-focus-overlay"></div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!----></div>
+                        </div>
+                    </div>
+                    <div _ngcontent-skr-c13="" _nghost-skr-c18="" class="ng-tns-c18-5"><!---->
+                        <!----></div>
+                </div>
+            </div>
+        </main>
+
     </div>
 </div>
-<div class="content_home">
 
-    <div class="app-side-menu">
-        Side menu
-    </div>
-
-    <div class="app-content-container">
-        App content container
-    </div>
-
-</div>
