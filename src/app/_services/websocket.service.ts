@@ -6,8 +6,8 @@ export interface MessageData {
   time?: string;
 }
 
-const CHAT_URL = "ws://172.17.0.1:5000/tree";
-
+// const CHAT_URL = "ws://172.17.0.1:5000/tree";
+const CHAT_URL = "ws://localhost:5000/echo";
 @Injectable({
   providedIn: 'root',
 })
