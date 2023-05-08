@@ -218,9 +218,6 @@
                                      data-test="entityCount" data-test-entity-type="node">0
                                 </div><!----><!----><!----></li>
                         </div>
-                        <div class="testDataJsonContainer">
-                            Test data json {{ WsService.receivedData?.properties?.check?.type }}
-                        </div>
                     </div>
                 </div>
             </div>
@@ -359,77 +356,49 @@
                                         <div class="mat-button-focus-overlay"></div>
                                     </button>
                                 </div><!---->
-                                <div _ngcontent-skr-c13="" class="container-list timeline ng-star-inserted"><!---->
-                                    <div _ngcontent-skr-c13="" class="ng-star-inserted">
+                                <div _ngcontent-skr-c13="" class="container-list timeline ng-star-inserted">
+
+                                    <div *ngFor="let logItemKey of WsService.activityLogKeysAr" _ngcontent-skr-c13="" class="ng-star-inserted">
                                         <div _ngcontent-skr-c13="" _nghost-skr-c16="">
                                             <div _ngcontent-skr-c16="" class="activityLogItem"
-                                                 data-test="activityLogItem"><p _ngcontent-skr-c16="" class="date">
-                                                02/03/2023 </p><!----><!----><p _ngcontent-skr-c16=""
-                                                                                class="description ng-star-inserted"
-                                                                                data-test="text"> Deleted Pool
-                                                zzz_zzz </p></div>
+                                                 data-test="activityLogItem">
+                                                <p _ngcontent-skr-c16="" class="date">
+                                                    {{ WsService.receivedData?.liveTree?.activityLog[logItemKey].timestamp | date: 'dd/MM/yyyy'}}
+                                                </p>
+                                                <p
+                                                        _ngcontent-skr-c16=""
+                                                        class="description ng-star-inserted"
+                                                        data-test="text"
+                                                >
+                                                    {{ WsService.receivedData?.liveTree?.activityLog[logItemKey].eventTitle }}
+                                                    {{ WsService.receivedData?.liveTree?.activityLog[logItemKey].entityName }}
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div _ngcontent-skr-c13="" class="ng-star-inserted">
-                                        <div _ngcontent-skr-c13="" _nghost-skr-c16="">
-                                            <div _ngcontent-skr-c16="" class="activityLogItem"
-                                                 data-test="activityLogItem"><p _ngcontent-skr-c16="" class="date">
-                                                03/11/2023 </p><!----><!----><p _ngcontent-skr-c16=""
-                                                                                class="description ng-star-inserted"
-                                                                                data-test="text"> Deleted Pool
-                                                test0 </p></div>
-                                        </div>
-                                    </div>
-                                    <div _ngcontent-skr-c13="" class="ng-star-inserted">
-                                        <div _ngcontent-skr-c13="" _nghost-skr-c16="">
-                                            <div _ngcontent-skr-c16="" class="activityLogItem"
-                                                 data-test="activityLogItem"><p _ngcontent-skr-c16="" class="date">
-                                                Today at 6:14 PM </p><!----><p _ngcontent-skr-c16=""
-                                                                               class="description ng-star-inserted"
-                                                                               data-test="text"> Created Pool <a
-                                                    _ngcontent-skr-c16="" class="ng-star-inserted">First pool</a>
-                                            </p><!----></div>
-                                        </div>
-                                    </div>
-                                    <div _ngcontent-skr-c13="" class="ng-star-inserted">
-                                        <div _ngcontent-skr-c13="" _nghost-skr-c16="">
-                                            <div _ngcontent-skr-c16="" class="activityLogItem"
-                                                 data-test="activityLogItem"><p _ngcontent-skr-c16="" class="date">
-                                                02/03/2023 </p><!----><p _ngcontent-skr-c16=""
-                                                                         class="description ng-star-inserted"
-                                                                         data-test="text"> Created Pool <!----><a
-                                                    _ngcontent-skr-c16="" class="ng-star-inserted">zzz_zzz</a></p>
-                                                <!----></div>
-                                        </div>
-                                    </div>
-                                    <div _ngcontent-skr-c13="" class="ng-star-inserted">
-                                        <div _ngcontent-skr-c13="" _nghost-skr-c16="">
-                                            <div _ngcontent-skr-c16="" class="activityLogItem"
-                                                 data-test="activityLogItem"><p _ngcontent-skr-c16="" class="date">
-                                                01/23/2023 </p><!----><p _ngcontent-skr-c16=""
-                                                                         class="description ng-star-inserted"
-                                                                         data-test="text"> Created Pool <!----><a
-                                                    _ngcontent-skr-c16="" class="ng-star-inserted">test0</a></p>
-                                                <!----></div>
-                                        </div>
-                                    </div>
-                                </div><!----></div>
+                                </div>
+                            </div>
                             <div _ngcontent-skr-c13="" class="alerts-container">
-                                <div _ngcontent-skr-c13="" class="container-header"><h2 _ngcontent-skr-c13="">Alerts
-                                    <span _ngcontent-skr-c13="" class="sub-header">Last 20 Alerts</span></h2>
+
+                                <div _ngcontent-skr-c13="" class="container-header">
+                                    <h2 _ngcontent-skr-c13="">
+                                        Alerts <span _ngcontent-skr-c13="" class="sub-header">Last 20 Alerts</span>
+                                    </h2>
                                     <button _ngcontent-skr-c13="" class="small mat-raised-button mat-gradient"
                                             data-test="homePageViewAllAlertsButton" mat-raised-button=""
                                             matripple=""><span class="mat-button-wrapper"> View all Alerts </span>
                                         <div class="mat-button-ripple mat-ripple" matripple=""></div>
                                         <div class="mat-button-focus-overlay"></div>
                                     </button>
-                                </div><!---->
-                                <div _ngcontent-skr-c13="" class="container-list list-items ng-star-inserted">
-                                    <!---->
-                                    <div _ngcontent-skr-c13="" class="ng-star-inserted">
+                                </div>
+
+                                <div  _ngcontent-skr-c13="" class="container-list list-items ng-star-inserted">
+
+                                    <div  *ngFor="let alertItemKey of WsService.alertsKeysAr"  _ngcontent-skr-c13="" class="ng-star-inserted">
                                         <div _ngcontent-skr-c13="" _nghost-skr-c17="">
                                             <div _ngcontent-skr-c17="" class="alertItem" data-test="alertItem"
-                                                 data-test-alert-isread="false" data-test-alert-id="1"><!---->
+                                                 data-test-alert-isread="false" data-test-alert-id="1"
+                                            >
                                                 <button _ngcontent-skr-c17=""
                                                         class="small read-button mat-raised-button mat-round ng-star-inserted"
                                                         data-test="alertMarkAsReadButton" mat-raised-button=""
@@ -438,12 +407,17 @@
                                                                                       class="material-icons">mail_outline</i></span>
                                                     <div class="mat-button-ripple mat-ripple" matripple=""></div>
                                                     <div class="mat-button-focus-overlay"></div>
-                                                </button><!---->
-                                                <div _ngcontent-skr-c17=""><p _ngcontent-skr-c17=""
-                                                                              class="time-stamp"> 01/18/2023 </p>
-                                                    <p _ngcontent-skr-c17=""> No waverunner log from previous
-                                                        cluster, so initializing empty cluster; path:
-                                                        /usr/local/tidalscale/opt/cluster.log </p></div>
+                                                </button>
+
+                                                <div _ngcontent-skr-c17="">
+                                                    <p _ngcontent-skr-c17="" class="time-stamp">
+                                                        {{ WsService.receivedData?.liveTree?.alerts[alertItemKey].timestamp | date: 'dd/MM/yyyy'}}
+                                                    </p>
+                                                    <p _ngcontent-skr-c17="">
+                                                        {{ WsService.receivedData?.liveTree?.alerts[alertItemKey].description }}
+                                                    </p>
+                                                </div>
+
                                                 <div _ngcontent-skr-c17="" class="alert-tags">
                                                     <div _ngcontent-skr-c17="" class="alert-tag"><!----><!---->
                                                         <!----></div><!----><!----><!----><!---->
@@ -458,8 +432,13 @@
                                                         <div class="mat-button-focus-overlay"></div>
                                                     </button>
                                                 </div>
+
                                             </div>
                                         </div>
+
+
+
+
                                     </div>
                                 </div><!----></div>
                         </div>

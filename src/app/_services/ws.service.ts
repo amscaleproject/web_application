@@ -14,6 +14,8 @@ const CHAT_URL = "ws://localhost:5000/echo";
 export class WsService {
   private socket$!: WebSocketSubject<any>;
   public receivedData: any;
+  public activityLogKeysAr: any;
+  public alertsKeysAr: any;
 
   public connect(): void {
     if (!this.socket$ || this.socket$.closed) {
@@ -21,6 +23,8 @@ export class WsService {
       this.socket$.subscribe((data: any) => {
         console.log('Json schema: ', data);
         this.receivedData = data;
+        this.activityLogKeysAr = Object.keys(data.liveTree.activityLog);
+        this.alertsKeysAr = Object.keys(data.liveTree.alerts);
       });
     }
   }
