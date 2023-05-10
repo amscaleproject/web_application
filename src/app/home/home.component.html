@@ -1,6 +1,7 @@
 
 <div _ngcontent-skr-c0="" class="fullWrap">
-    <div _ngcontent-skr-c0="" class="pageWrap"><!----><!---->
+    <div _ngcontent-skr-c0="" class="pageWrap">
+
         <div _ngcontent-skr-c0="" class="header ng-star-inserted" _nghost-skr-c2="">
             <div _ngcontent-skr-c2="" class="mat-toolbar mat-primary mat-toolbar-multiple-rows"
                  color="primary">
@@ -34,7 +35,7 @@
                                                          routerlink="/activity" routerlinkactive="active"
                                                          href="https://45.80.47.150:23443/activity"><i
                                     _ngcontent-skr-c2="" class="icon-activity-icon"></i> Activity</a></div>
-                        </div><!---->
+                        </div>
 
                         <div _ngcontent-skr-c2="" class="userDropdownContainer ng-star-inserted"
                              data-test="headerUserDropdownMenu">
@@ -43,19 +44,11 @@
                                    class="material-icons">
                                     person_outline
                                 </i>
-    <!--                            admin-->
                                 <a [routerLink]="['/login']">Logout</a>
                             </p>
-
-<!--                            <button _ngcontent-skr-c2="" aria-haspopup="true" mat-icon-button=""-->
-<!--                                    class="mat-icon-button"><span class="mat-button-wrapper"><i _ngcontent-skr-c2=""-->
-<!--                                                                                                class="material-icons">arrow_drop_down</i></span>-->
-<!--                                <div class="mat-button-ripple mat-ripple mat-button-ripple-round"-->
-<!--                                     matripple=""></div>-->
-<!--                                <div class="mat-button-focus-overlay"></div>-->
-<!--                            </button>-->
                             <div _ngcontent-skr-c2="" class="ng-tns-c23-8"><!----></div>
-                        </div><!----></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -363,15 +356,15 @@
                                             <div _ngcontent-skr-c16="" class="activityLogItem"
                                                  data-test="activityLogItem">
                                                 <p _ngcontent-skr-c16="" class="date">
-                                                    {{ WsService.receivedData?.liveTree?.activityLog[logItemKey].timestamp | date: 'dd/MM/yyyy'}}
+                                                    {{ WsService.receivedData?.response?.liveTree?.activityLog[logItemKey].timestamp | date: 'dd/MM/yyyy'}}
                                                 </p>
                                                 <p
                                                         _ngcontent-skr-c16=""
                                                         class="description ng-star-inserted"
                                                         data-test="text"
                                                 >
-                                                    {{ WsService.receivedData?.liveTree?.activityLog[logItemKey].eventTitle }}
-                                                    {{ WsService.receivedData?.liveTree?.activityLog[logItemKey].entityName }}
+                                                    {{ WsService.receivedData?.response?.liveTree?.activityLog[logItemKey].eventTitle }}
+                                                    {{ WsService.receivedData?.response?.liveTree?.activityLog[logItemKey].entityName }}
                                                 </p>
                                             </div>
                                         </div>
@@ -411,10 +404,10 @@
 
                                                 <div _ngcontent-skr-c17="">
                                                     <p _ngcontent-skr-c17="" class="time-stamp">
-                                                        {{ WsService.receivedData?.liveTree?.alerts[alertItemKey].timestamp | date: 'dd/MM/yyyy'}}
+                                                        {{ WsService.receivedData?.response?.liveTree?.alerts[alertItemKey].timestamp | date: 'dd/MM/yyyy'}}
                                                     </p>
                                                     <p _ngcontent-skr-c17="">
-                                                        {{ WsService.receivedData?.liveTree?.alerts[alertItemKey].description }}
+                                                        {{ WsService.receivedData?.response?.liveTree?.alerts[alertItemKey].description }}
                                                     </p>
                                                 </div>
 
