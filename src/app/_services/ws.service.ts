@@ -33,9 +33,10 @@ export class WsService {
         this.receivedData = res;
         sendKey = exchServ.getKey(res);
         if(sendKey) this.send( sendMock[sendKey] );
+
         if( this.receivedData.response.hasOwnProperty("configTree") ) {
-          this.activityLogKeysAr = Object.keys(res.response?.liveTree?.activityLog);
-          this.alertsKeysAr = Object.keys(res.response?.liveTree?.alerts);
+          this.activityLogKeysAr = Object.keys(res.response?.liveTree?.activityLog ?? {});
+          this.alertsKeysAr = Object.keys(res.response?.liveTree?.alerts ?? {});
         }
       });
 
