@@ -18,7 +18,7 @@ export class ExchangeService {
 
     let sendMock_v2 = {
       auth: {action: {actions: {auth: {bind: {token: "AAAAAQAgmr+UIuqiHmiaBnNnvprMTESJkCKQ7wJ07a4gxaL/1iU="}}}}},
-      auth_login: {action: {actions: {auth: {login: {username: "admin", password: "attikaattika", client_id: "web_ui"}}}}},
+      auth_login: {action: {actions: {auth: {login: {username: "admin", password: "passpass", client_id: "client_id"}}}}},
       readSett: {read: "liveTree:auth:sessions:current"},
       version: {version: ""},
       read: {read: ""}
@@ -40,11 +40,15 @@ export class ExchangeService {
         return 'auth_login';
       }
     }
-
     if( res.response?.liveTree?.auth?.sessions?.current?.auth_method  == "config" )
       return 'version';
-    if( res.response == 'v03.04.00_rc1-259-wr-b8735915-hk-d3d4d8ee' )
+    if (
+        (res.response != undefined) &&
+        ( res.response[0] == 'v')
+    ){
       return 'read';
+    }
+
     return null;
   }
   addCorrelators(){
