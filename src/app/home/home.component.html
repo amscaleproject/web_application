@@ -363,8 +363,16 @@
                                                         class="description ng-star-inserted"
                                                         data-test="text"
                                                 >
-                                                    {{ WsService.receivedData?.response?.liveTree?.activityLog[logItemKey].eventTitle }}
+                                                    {{ WsService.
+                                                        receivedData?.
+                                                        response?.
+                                                        liveTree?.
+                                                        activityLog[logItemKey].
+                                                        localization?.ru?.
+                                                        eventTitle
+                                                    }}
                                                     {{ WsService.receivedData?.response?.liveTree?.activityLog[logItemKey].entityName }}
+
                                                 </p>
                                             </div>
                                         </div>
