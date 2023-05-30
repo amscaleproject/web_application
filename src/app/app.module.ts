@@ -18,6 +18,8 @@ import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
 import { TestwsComponent } from './testws';
+import { PoolListComponent } from './pool-list/pool-list.component';
+import { PoolComponent } from './pool/pool.component';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { TestwsComponent } from './testws';
         HomeComponent,
         LoginComponent,
         RegisterComponent,
-        TestwsComponent
+        TestwsComponent,
+        PoolListComponent,
+        PoolComponent
     ],
     providers: [
         AuthGuard,
