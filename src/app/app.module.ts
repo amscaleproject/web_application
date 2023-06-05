@@ -21,6 +21,7 @@ import { TestwsComponent } from './testws';
 import { PoolListComponent } from './pool-list/pool-list.component';
 import { PoolComponent } from './pool/pool.component';
 import { StatsContainerComponent } from './stats-container/stats-container.component';
+import { PageHeaderComponent } from './page-header/page-header.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { StatsContainerComponent } from './stats-container/stats-container.compo
         TestwsComponent,
         PoolListComponent,
         PoolComponent,
-        StatsContainerComponent
+        StatsContainerComponent,
+        PageHeaderComponent
     ],
     providers: [
         AuthGuard,
