@@ -1,1 +1,572 @@
-<p>pool-list works!</p>
+<div _nghost-gbn-c27="" class="app-page-pool-list ng-star-inserted">
+
+    <div _ngcontent-gbn-c27="" class="page-header list-page">
+        <div _ngcontent-gbn-c27="" class="header-links"><h1 _ngcontent-gbn-c27="">All Pools</h1><span
+                _ngcontent-gbn-c27="" class="material-icons help-icon">help</span></div>
+        <div _ngcontent-gbn-c27="" class="header-actions">
+            <button _ngcontent-gbn-c27="" data-test="createPoolButton" mat-raised-button="" matripple=""
+                    class="mat-raised-button mat-gradient"><span class="mat-button-wrapper">Create Pool</span>
+                <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                <div class="mat-button-focus-overlay"></div>
+            </button>
+        </div>
+    </div>
+
+    <div _ngcontent-gbn-c27="" class="stats-wrapper">
+
+        <div _ngcontent-gbn-c27="" _nghost-gbn-c14="" class="app-stats-container ng-tns-c14-28">
+            <div _ngcontent-gbn-c14="" class="container blue ng-trigger ng-trigger-slideInLeftOnEnter">
+                <div _ngcontent-gbn-c14="" class="container-overlay"></div>
+                <i _ngcontent-gbn-c27="" class="icon-pool-icon"></i>
+                <div _ngcontent-gbn-c27="" class="stat-number">
+                    <div _ngcontent-gbn-c27="" style="width:100%;">
+                        <div _ngcontent-gbn-c27="" data-test="totalPoolCount" fittext="" style="font-size: 46px;">4
+                        </div>
+                    </div>
+                </div>
+                <div _ngcontent-gbn-c27="" class="stat-unit">Pools</div>
+            </div>
+        </div>
+
+        <div _ngcontent-gbn-c27="" _nghost-gbn-c14="" class="app-stats-container ng-tns-c14-29">
+            <div _ngcontent-gbn-c14="" class="container purple ng-trigger ng-trigger-slideInLeftOnEnter">
+                <div _ngcontent-gbn-c14="" class="container-overlay"></div>
+                <i _ngcontent-gbn-c27="" class="icon-sds-icon"></i>
+                <div _ngcontent-gbn-c27="" class="stat-number">
+                    <div _ngcontent-gbn-c27="" style="width:100%;">
+                        <div _ngcontent-gbn-c27="" data-test="totalSdsCount" fittext="" style="font-size: 46px;">0</div>
+                    </div>
+                </div>
+                <div _ngcontent-gbn-c27="" class="stat-unit">SDServers</div>
+            </div>
+        </div>
+
+        <div _ngcontent-gbn-c27="" _nghost-gbn-c14="" class="app-stats-container ng-tns-c14-30">
+            <div _ngcontent-gbn-c14="" class="container green ng-trigger ng-trigger-slideInLeftOnEnter">
+                <div _ngcontent-gbn-c14="" class="container-overlay"></div>
+                <i _ngcontent-gbn-c27="" class="icon-node-icon"></i>
+                <div _ngcontent-gbn-c27="" class="stat-number">
+                    <div _ngcontent-gbn-c27="" style="width:100%;">
+                        <div _ngcontent-gbn-c27="" data-test="totalNodeCount" fittext="" style="font-size: 46px;">0
+                        </div>
+                    </div>
+                </div>
+                <div _ngcontent-gbn-c27="" class="stat-unit">Nodes</div>
+            </div>
+        </div>
+
+        <div _ngcontent-gbn-c27="" _nghost-gbn-c14="" class="app-stats-container ng-tns-c14-31">
+            <div _ngcontent-gbn-c14="" class="container green ng-trigger ng-trigger-slideInLeftOnEnter">
+                <div _ngcontent-gbn-c14="" class="container-overlay"></div>
+                <i _ngcontent-gbn-c27="" class="icon-node-icon unassigned-dot"></i>
+                <div _ngcontent-gbn-c27="" class="stat-number">
+                    <div _ngcontent-gbn-c27="" style="width:100%;">
+                        <div _ngcontent-gbn-c27="" data-test="totalUnassignedNodeCount" fittext=""
+                             style="font-size: 46px;">0
+                        </div>
+                    </div>
+                </div>
+                <div _ngcontent-gbn-c27="" class="stat-unit">Nodes <span _ngcontent-gbn-c27="">unassigned</span></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div _ngcontent-gbn-c27="" class="table-wrapper">
+
+        <div _ngcontent-gbn-c27="" class="table-header">
+            <h3 _ngcontent-gbn-c27="">Pools</h3>
+            <form _ngcontent-gbn-c27="" class="clear-input small-input ng-untouched ng-pristine ng-valid" novalidate="">
+                <div _ngcontent-gbn-c27=""
+                     appearance="outline"
+                    class="mat-form-field
+                        form-field
+                        mat-form-field
+                        ng-tns-c9-32
+                        mat-primary
+                        mat-form-field-type-mat-input
+                        mat-form-field-appearance-outline
+                        mat-form-field-can-float
+                        ng-untouched ng-pristine
+                        ng-valid"
+                >
+                    <div class="mat-form-field-wrapper">
+                        <div class="mat-form-field-flex"><!----><!---->
+                            <div class="mat-form-field-outline ng-tns-c9-32 ng-star-inserted">
+                                <div class="mat-form-field-outline-start"></div>
+                                <div class="mat-form-field-outline-gap"></div>
+                                <div class="mat-form-field-outline-end"></div>
+                            </div>
+                            <div class="mat-form-field-outline mat-form-field-outline-thick ng-tns-c9-32 ng-star-inserted">
+                                <div class="mat-form-field-outline-start"></div>
+                                <div class="mat-form-field-outline-gap"></div>
+                                <div class="mat-form-field-outline-end"></div>
+                            </div><!---->
+                            <div class="mat-form-field-infix"><input _ngcontent-gbn-c27="" autocomplete="off"
+                                                                     class="mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-valid"
+                                                                     formcontrolname="filterText" matinput=""
+                                                                     name="search" placeholder="Search Pool list"
+                                                                     type="text" id="mat-input-2" aria-invalid="false"
+                                                                     aria-required="false"><span
+                                    class="mat-form-field-label-wrapper"><!----></span></div><!----></div><!---->
+                        <div class="mat-form-field-subscript-wrapper"><!----><!---->
+                            <div class="mat-form-field-hint-wrapper ng-tns-c9-32 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
+                                 style="opacity: 1; transform: translateY(0%);"><!---->
+                                <div class="mat-form-field-hint-spacer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <table _ngcontent-gbn-c27="" class="mat-table" mat-table="" matsort="" matsortdisableclear="true" role="grid">
+            <thead role="rowgroup"><!---->
+                <tr _ngcontent-gbn-c27="" class="mat-header-row ng-star-inserted" mat-header-row="" role="row"><!---->
+                <th _ngcontent-gbn-c27=""
+                    class="mat-header-cell ng-tns-c29-34 cdk-column-name mat-column-name ng-star-inserted"
+                    mat-header-cell="" mat-sort-header="" role="columnheader"
+                    style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                    <div class="mat-sort-header-container">
+                        <button class="mat-sort-header-button" type="button" aria-label="Change sorting for name">Pool
+                            Name
+                        </button><!---->
+                        <div class="mat-sort-header-arrow ng-trigger ng-trigger-arrowPosition ng-tns-c29-34 ng-star-inserted"
+                             style="transform: translateY(25%); opacity: 0;">
+                            <div class="mat-sort-header-stem"></div>
+                            <div class="mat-sort-header-indicator ng-trigger ng-trigger-indicator"
+                                 style="transform: translateY(0px);">
+                                <div class="mat-sort-header-pointer-left ng-trigger ng-trigger-leftPointer"
+                                     style="transform: rotate(-45deg);"></div>
+                                <div class="mat-sort-header-pointer-right ng-trigger ng-trigger-rightPointer"
+                                     style="transform: rotate(45deg);"></div>
+                                <div class="mat-sort-header-pointer-middle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th _ngcontent-gbn-c27=""
+                    class="mat-header-cell ng-tns-c29-35 cdk-column-sdss mat-column-sdss ng-star-inserted"
+                    mat-header-cell="" mat-sort-header="" role="columnheader"
+                    style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                    <div class="mat-sort-header-container">
+                        <button class="mat-sort-header-button" type="button" aria-label="Change sorting for sdss">Num.
+                            SDServers
+                        </button><!---->
+                        <div class="mat-sort-header-arrow ng-trigger ng-trigger-arrowPosition ng-tns-c29-35 ng-star-inserted"
+                             style="transform: translateY(25%); opacity: 0;">
+                            <div class="mat-sort-header-stem"></div>
+                            <div class="mat-sort-header-indicator ng-trigger ng-trigger-indicator"
+                                 style="transform: translateY(0px);">
+                                <div class="mat-sort-header-pointer-left ng-trigger ng-trigger-leftPointer"
+                                     style="transform: rotate(-45deg);"></div>
+                                <div class="mat-sort-header-pointer-right ng-trigger ng-trigger-rightPointer"
+                                     style="transform: rotate(45deg);"></div>
+                                <div class="mat-sort-header-pointer-middle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th _ngcontent-gbn-c27=""
+                    class="mat-header-cell ng-tns-c29-36 cdk-column-nodes mat-column-nodes ng-star-inserted"
+                    mat-header-cell="" mat-sort-header="" role="columnheader"
+                    style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                    <div class="mat-sort-header-container">
+                        <button class="mat-sort-header-button" type="button" aria-label="Change sorting for nodes">Num.
+                            Nodes
+                        </button><!---->
+                        <div class="mat-sort-header-arrow ng-trigger ng-trigger-arrowPosition ng-tns-c29-36 ng-star-inserted"
+                             style="transform: translateY(25%); opacity: 0;">
+                            <div class="mat-sort-header-stem"></div>
+                            <div class="mat-sort-header-indicator ng-trigger ng-trigger-indicator"
+                                 style="transform: translateY(0px);">
+                                <div class="mat-sort-header-pointer-left ng-trigger ng-trigger-leftPointer"
+                                     style="transform: rotate(-45deg);"></div>
+                                <div class="mat-sort-header-pointer-right ng-trigger ng-trigger-rightPointer"
+                                     style="transform: rotate(45deg);"></div>
+                                <div class="mat-sort-header-pointer-middle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th _ngcontent-gbn-c27=""
+                    class="mat-header-cell ng-tns-c29-37 cdk-column-nodesassigned mat-column-nodesassigned ng-star-inserted"
+                    mat-header-cell="" mat-sort-header="" role="columnheader"
+                    style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                    <div class="mat-sort-header-container">
+                        <button class="mat-sort-header-button" type="button"
+                                aria-label="Change sorting for nodesassigned">Nodes Assigned
+                        </button><!---->
+                        <div class="mat-sort-header-arrow ng-trigger ng-trigger-arrowPosition ng-tns-c29-37 ng-star-inserted"
+                             style="transform: translateY(25%); opacity: 0;">
+                            <div class="mat-sort-header-stem"></div>
+                            <div class="mat-sort-header-indicator ng-trigger ng-trigger-indicator"
+                                 style="transform: translateY(0px);">
+                                <div class="mat-sort-header-pointer-left ng-trigger ng-trigger-leftPointer"
+                                     style="transform: rotate(-45deg);"></div>
+                                <div class="mat-sort-header-pointer-right ng-trigger ng-trigger-rightPointer"
+                                     style="transform: rotate(45deg);"></div>
+                                <div class="mat-sort-header-pointer-middle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th _ngcontent-gbn-c27=""
+                    class="mat-header-cell ng-tns-c29-38 cdk-column-nodesunassigned mat-column-nodesunassigned ng-star-inserted"
+                    mat-header-cell="" mat-sort-header="" role="columnheader"
+                    style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                    <div class="mat-sort-header-container">
+                        <button class="mat-sort-header-button" type="button"
+                                aria-label="Change sorting for nodesunassigned"></button><!---->
+                        <div class="mat-sort-header-arrow ng-trigger ng-trigger-arrowPosition ng-tns-c29-38 ng-star-inserted"
+                             style="transform: translateY(25%); opacity: 0;">
+                            <div class="mat-sort-header-stem"></div>
+                            <div class="mat-sort-header-indicator ng-trigger ng-trigger-indicator"
+                                 style="transform: translateY(0px);">
+                                <div class="mat-sort-header-pointer-left ng-trigger ng-trigger-leftPointer"
+                                     style="transform: rotate(-45deg);"></div>
+                                <div class="mat-sort-header-pointer-right ng-trigger ng-trigger-rightPointer"
+                                     style="transform: rotate(45deg);"></div>
+                                <div class="mat-sort-header-pointer-middle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th _ngcontent-gbn-c27=""
+                    class="mat-header-cell ng-tns-c29-39 cdk-column-memory mat-column-memory custom-width-10 ng-star-inserted"
+                    mat-header-cell="" mat-sort-header="" role="columnheader"
+                    style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                    <div class="mat-sort-header-container">
+                        <button class="mat-sort-header-button" type="button" aria-label="Change sorting for memory">
+                            Memory per Node
+                        </button><!---->
+                        <div class="mat-sort-header-arrow ng-trigger ng-trigger-arrowPosition ng-tns-c29-39 ng-star-inserted"
+                             style="transform: translateY(25%); opacity: 0;">
+                            <div class="mat-sort-header-stem"></div>
+                            <div class="mat-sort-header-indicator ng-trigger ng-trigger-indicator"
+                                 style="transform: translateY(0px);">
+                                <div class="mat-sort-header-pointer-left ng-trigger ng-trigger-leftPointer"
+                                     style="transform: rotate(-45deg);"></div>
+                                <div class="mat-sort-header-pointer-right ng-trigger ng-trigger-rightPointer"
+                                     style="transform: rotate(45deg);"></div>
+                                <div class="mat-sort-header-pointer-middle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th _ngcontent-gbn-c27=""
+                    class="mat-header-cell ng-tns-c29-40 cdk-column-cores mat-column-cores custom-width-10 ng-star-inserted"
+                    mat-header-cell="" mat-sort-header="" role="columnheader"
+                    style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                    <div class="mat-sort-header-container">
+                        <button class="mat-sort-header-button" type="button" aria-label="Change sorting for cores">
+                            Processors per Node
+                        </button><!---->
+                        <div class="mat-sort-header-arrow ng-trigger ng-trigger-arrowPosition ng-tns-c29-40 ng-star-inserted"
+                             style="transform: translateY(25%); opacity: 0;">
+                            <div class="mat-sort-header-stem"></div>
+                            <div class="mat-sort-header-indicator ng-trigger ng-trigger-indicator"
+                                 style="transform: translateY(0px);">
+                                <div class="mat-sort-header-pointer-left ng-trigger ng-trigger-leftPointer"
+                                     style="transform: rotate(-45deg);"></div>
+                                <div class="mat-sort-header-pointer-right ng-trigger ng-trigger-rightPointer"
+                                     style="transform: rotate(45deg);"></div>
+                                <div class="mat-sort-header-pointer-middle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </th>
+                <th _ngcontent-gbn-c27="" class="mat-header-cell cdk-column-actions mat-column-actions ng-star-inserted"
+                    mat-header-cell="" role="columnheader"></th>
+            </tr>
+            </thead>
+            <tbody role="rowgroup"><!---->
+                <tr _ngcontent-gbn-c27="" class="mat-row ng-star-inserted" mat-row="" role="row"><!---->
+                    <td _ngcontent-gbn-c27="" class="mat-cell cdk-column-name mat-column-name ng-star-inserted" mat-cell=""
+                        role="gridcell">
+                        <div _ngcontent-gbn-c27="" class="name-wrapper"><a _ngcontent-gbn-c27=""
+                                                                           href="/pool/0f88b617-d04b-f98e-6f2e-0ce2a8ef28a8">Second
+                            pool</a><span _ngcontent-gbn-c27="" class="name-detail">baremetal</span></div>
+                        <p _ngcontent-gbn-c27="" class="description"> Desc second pool </p></td>
+                    <td _ngcontent-gbn-c27="" class="table-number mat-cell cdk-column-sdss mat-column-sdss ng-star-inserted"
+                        mat-cell="" role="gridcell"> 0
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="table-number mat-cell cdk-column-nodes mat-column-nodes ng-star-inserted" mat-cell=""
+                        role="gridcell"> 0
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="mat-cell cdk-column-nodesassigned mat-column-nodesassigned ng-star-inserted" mat-cell=""
+                        role="gridcell">
+                        <div _ngcontent-gbn-c27="" class="table-bar blue percent-0"></div>
+                        <span _ngcontent-gbn-c27="" class="bar-unit">0</span><span _ngcontent-gbn-c27="" class="bar-text"> assigned</span>
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="mat-cell cdk-column-nodesunassigned mat-column-nodesunassigned ng-star-inserted" mat-cell=""
+                        role="gridcell">
+                        <div _ngcontent-gbn-c27="" class="table-bar grey percent-0"></div>
+                        <span _ngcontent-gbn-c27="" class="bar-unit">0</span><span _ngcontent-gbn-c27="" class="bar-text"> unassigned</span>
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="table-number darker mat-cell cdk-column-memory mat-column-memory ng-star-inserted"
+                        mat-cell="" role="gridcell">
+                        <app-size-display _ngcontent-gbn-c27="" _nghost-gbn-c30=""><!----><!---->
+                            <div _ngcontent-gbn-c30="" class="ng-star-inserted">
+                                <div _ngcontent-gbn-c30="" class="size-display-container">
+                                    <div _ngcontent-gbn-c30="" class="sizeDisplay withUnit"> 0<span _ngcontent-gbn-c30=""
+                                                                                                    class="size-display-unit"> GB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </app-size-display>
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="table-number darker mat-cell cdk-column-cores mat-column-cores ng-star-inserted" mat-cell=""
+                        role="gridcell"> 0
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="table-actions darker mat-cell cdk-column-actions mat-column-actions ng-star-inserted"
+                        mat-cell="" role="gridcell">
+                        <button _ngcontent-gbn-c27="" class="square mat-raised-button mat-secondary"
+                                data-test="deleteEntityOptionButton" mat-raised-button="" matripple="" title="Delete Pool">
+                            <span class="mat-button-wrapper"><span _ngcontent-gbn-c27="" class="material-icons">delete_outline</span></span>
+                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                            <div class="mat-button-focus-overlay"></div>
+                        </button>
+                        <button _ngcontent-gbn-c27="" class="square mat-raised-button mat-secondary"
+                                data-test="viewEntityOptionButton" mat-raised-button="" matripple="" title="View Pool"><span
+                                class="mat-button-wrapper"><span _ngcontent-gbn-c27=""
+                                                                 class="material-icons">visibility</span></span>
+                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                            <div class="mat-button-focus-overlay"></div>
+                        </button>
+                        <button _ngcontent-gbn-c27="" class="square mat-raised-button mat-secondary"
+                                data-test="editEntityOptionButton" mat-raised-button="" matripple="" title="Edit Pool"><span
+                                class="mat-button-wrapper"><span _ngcontent-gbn-c27=""
+                                                                 class="material-icons">edit</span></span>
+                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                            <div class="mat-button-focus-overlay"></div>
+                        </button>
+                    </td>
+                </tr>
+                <tr _ngcontent-gbn-c27="" class="mat-row ng-star-inserted" mat-row="" role="row"><!---->
+                    <td _ngcontent-gbn-c27="" class="mat-cell cdk-column-name mat-column-name ng-star-inserted" mat-cell=""
+                        role="gridcell">
+                        <div _ngcontent-gbn-c27="" class="name-wrapper"><a _ngcontent-gbn-c27=""
+                                                                           href="/pool/272c59a5-39c5-8acb-297e-286fbe6b979b">thth33</a><span
+                                _ngcontent-gbn-c27="" class="name-detail">mock</span></div>
+                        <p _ngcontent-gbn-c27="" class="description"> d3 </p></td>
+                    <td _ngcontent-gbn-c27="" class="table-number mat-cell cdk-column-sdss mat-column-sdss ng-star-inserted"
+                        mat-cell="" role="gridcell"> 0
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="table-number mat-cell cdk-column-nodes mat-column-nodes ng-star-inserted" mat-cell=""
+                        role="gridcell"> 0
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="mat-cell cdk-column-nodesassigned mat-column-nodesassigned ng-star-inserted" mat-cell=""
+                        role="gridcell">
+                        <div _ngcontent-gbn-c27="" class="table-bar blue percent-0"></div>
+                        <span _ngcontent-gbn-c27="" class="bar-unit">0</span><span _ngcontent-gbn-c27="" class="bar-text"> assigned</span>
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="mat-cell cdk-column-nodesunassigned mat-column-nodesunassigned ng-star-inserted" mat-cell=""
+                        role="gridcell">
+                        <div _ngcontent-gbn-c27="" class="table-bar grey percent-0"></div>
+                        <span _ngcontent-gbn-c27="" class="bar-unit">0</span><span _ngcontent-gbn-c27="" class="bar-text"> unassigned</span>
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="table-number darker mat-cell cdk-column-memory mat-column-memory ng-star-inserted"
+                        mat-cell="" role="gridcell">
+                        <app-size-display _ngcontent-gbn-c27="" _nghost-gbn-c30=""><!----><!---->
+                            <div _ngcontent-gbn-c30="" class="ng-star-inserted">
+                                <div _ngcontent-gbn-c30="" class="size-display-container">
+                                    <div _ngcontent-gbn-c30="" class="sizeDisplay withUnit"> 0<span _ngcontent-gbn-c30=""
+                                                                                                    class="size-display-unit"> GB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </app-size-display>
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="table-number darker mat-cell cdk-column-cores mat-column-cores ng-star-inserted" mat-cell=""
+                        role="gridcell"> 0
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="table-actions darker mat-cell cdk-column-actions mat-column-actions ng-star-inserted"
+                        mat-cell="" role="gridcell">
+                        <button _ngcontent-gbn-c27="" class="square mat-raised-button mat-secondary"
+                                data-test="deleteEntityOptionButton" mat-raised-button="" matripple="" title="Delete Pool">
+                            <span class="mat-button-wrapper"><span _ngcontent-gbn-c27="" class="material-icons">delete_outline</span></span>
+                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                            <div class="mat-button-focus-overlay"></div>
+                        </button>
+                        <button _ngcontent-gbn-c27="" class="square mat-raised-button mat-secondary"
+                                data-test="viewEntityOptionButton" mat-raised-button="" matripple="" title="View Pool"><span
+                                class="mat-button-wrapper"><span _ngcontent-gbn-c27=""
+                                                                 class="material-icons">visibility</span></span>
+                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                            <div class="mat-button-focus-overlay"></div>
+                        </button>
+                        <button _ngcontent-gbn-c27="" class="square mat-raised-button mat-secondary"
+                                data-test="editEntityOptionButton" mat-raised-button="" matripple="" title="Edit Pool"><span
+                                class="mat-button-wrapper"><span _ngcontent-gbn-c27=""
+                                                                 class="material-icons">edit</span></span>
+                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                            <div class="mat-button-focus-overlay"></div>
+                        </button>
+                    </td>
+                </tr>
+                <tr _ngcontent-gbn-c27="" class="mat-row ng-star-inserted" mat-row="" role="row"><!---->
+                    <td _ngcontent-gbn-c27="" class="mat-cell cdk-column-name mat-column-name ng-star-inserted" mat-cell=""
+                        role="gridcell">
+                        <div _ngcontent-gbn-c27="" class="name-wrapper"><a _ngcontent-gbn-c27=""
+                                                                           href="/pool/ba853ed7-a2f3-fb8a-9680-ee0a65f428b8">Fourth
+                            pool</a><span _ngcontent-gbn-c27="" class="name-detail">baremetal</span></div>
+                        <p _ngcontent-gbn-c27="" class="description"> Desc 4 </p></td>
+                    <td _ngcontent-gbn-c27="" class="table-number mat-cell cdk-column-sdss mat-column-sdss ng-star-inserted"
+                        mat-cell="" role="gridcell"> 0
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="table-number mat-cell cdk-column-nodes mat-column-nodes ng-star-inserted" mat-cell=""
+                        role="gridcell"> 0
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="mat-cell cdk-column-nodesassigned mat-column-nodesassigned ng-star-inserted" mat-cell=""
+                        role="gridcell">
+                        <div _ngcontent-gbn-c27="" class="table-bar blue percent-0"></div>
+                        <span _ngcontent-gbn-c27="" class="bar-unit">0</span><span _ngcontent-gbn-c27="" class="bar-text"> assigned</span>
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="mat-cell cdk-column-nodesunassigned mat-column-nodesunassigned ng-star-inserted" mat-cell=""
+                        role="gridcell">
+                        <div _ngcontent-gbn-c27="" class="table-bar grey percent-0"></div>
+                        <span _ngcontent-gbn-c27="" class="bar-unit">0</span><span _ngcontent-gbn-c27="" class="bar-text"> unassigned</span>
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="table-number darker mat-cell cdk-column-memory mat-column-memory ng-star-inserted"
+                        mat-cell="" role="gridcell">
+                        <app-size-display _ngcontent-gbn-c27="" _nghost-gbn-c30=""><!----><!---->
+                            <div _ngcontent-gbn-c30="" class="ng-star-inserted">
+                                <div _ngcontent-gbn-c30="" class="size-display-container">
+                                    <div _ngcontent-gbn-c30="" class="sizeDisplay withUnit"> 0<span _ngcontent-gbn-c30=""
+                                                                                                    class="size-display-unit"> GB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </app-size-display>
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="table-number darker mat-cell cdk-column-cores mat-column-cores ng-star-inserted" mat-cell=""
+                        role="gridcell"> 0
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="table-actions darker mat-cell cdk-column-actions mat-column-actions ng-star-inserted"
+                        mat-cell="" role="gridcell">
+                        <button _ngcontent-gbn-c27="" class="square mat-raised-button mat-secondary"
+                                data-test="deleteEntityOptionButton" mat-raised-button="" matripple="" title="Delete Pool">
+                            <span class="mat-button-wrapper"><span _ngcontent-gbn-c27="" class="material-icons">delete_outline</span></span>
+                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                            <div class="mat-button-focus-overlay"></div>
+                        </button>
+                        <button _ngcontent-gbn-c27="" class="square mat-raised-button mat-secondary"
+                                data-test="viewEntityOptionButton" mat-raised-button="" matripple="" title="View Pool"><span
+                                class="mat-button-wrapper"><span _ngcontent-gbn-c27=""
+                                                                 class="material-icons">visibility</span></span>
+                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                            <div class="mat-button-focus-overlay"></div>
+                        </button>
+                        <button _ngcontent-gbn-c27="" class="square mat-raised-button mat-secondary"
+                                data-test="editEntityOptionButton" mat-raised-button="" matripple="" title="Edit Pool"><span
+                                class="mat-button-wrapper"><span _ngcontent-gbn-c27=""
+                                                                 class="material-icons">edit</span></span>
+                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                            <div class="mat-button-focus-overlay"></div>
+                        </button>
+                    </td>
+                </tr>
+                <tr _ngcontent-gbn-c27="" class="mat-row ng-star-inserted" mat-row="" role="row"><!---->
+                    <td _ngcontent-gbn-c27="" class="mat-cell cdk-column-name mat-column-name ng-star-inserted" mat-cell=""
+                        role="gridcell">
+                        <div _ngcontent-gbn-c27="" class="name-wrapper"><a _ngcontent-gbn-c27=""
+                                                                           href="/pool/eb0801d5-614f-907b-4175-574d89018661">First
+                            pool</a><span _ngcontent-gbn-c27="" class="name-detail">mock</span></div>
+                        <p _ngcontent-gbn-c27="" class="description"> Description first pool </p></td>
+                    <td _ngcontent-gbn-c27="" class="table-number mat-cell cdk-column-sdss mat-column-sdss ng-star-inserted"
+                        mat-cell="" role="gridcell"> 0
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="table-number mat-cell cdk-column-nodes mat-column-nodes ng-star-inserted" mat-cell=""
+                        role="gridcell"> 0
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="mat-cell cdk-column-nodesassigned mat-column-nodesassigned ng-star-inserted" mat-cell=""
+                        role="gridcell">
+                        <div _ngcontent-gbn-c27="" class="table-bar blue percent-0"></div>
+                        <span _ngcontent-gbn-c27="" class="bar-unit">0</span><span _ngcontent-gbn-c27="" class="bar-text"> assigned</span>
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="mat-cell cdk-column-nodesunassigned mat-column-nodesunassigned ng-star-inserted" mat-cell=""
+                        role="gridcell">
+                        <div _ngcontent-gbn-c27="" class="table-bar grey percent-0"></div>
+                        <span _ngcontent-gbn-c27="" class="bar-unit">0</span><span _ngcontent-gbn-c27="" class="bar-text"> unassigned</span>
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="table-number darker mat-cell cdk-column-memory mat-column-memory ng-star-inserted"
+                        mat-cell="" role="gridcell">
+                        <app-size-display _ngcontent-gbn-c27="" _nghost-gbn-c30=""><!----><!---->
+                            <div _ngcontent-gbn-c30="" class="ng-star-inserted">
+                                <div _ngcontent-gbn-c30="" class="size-display-container">
+                                    <div _ngcontent-gbn-c30="" class="sizeDisplay withUnit"> 0<span _ngcontent-gbn-c30=""
+                                                                                                    class="size-display-unit"> GB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </app-size-display>
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="table-number darker mat-cell cdk-column-cores mat-column-cores ng-star-inserted" mat-cell=""
+                        role="gridcell"> 0
+                    </td>
+                    <td _ngcontent-gbn-c27=""
+                        class="table-actions darker mat-cell cdk-column-actions mat-column-actions ng-star-inserted"
+                        mat-cell="" role="gridcell">
+                        <button _ngcontent-gbn-c27="" class="square mat-raised-button mat-secondary"
+                                data-test="deleteEntityOptionButton" mat-raised-button="" matripple="" title="Delete Pool">
+                            <span class="mat-button-wrapper"><span _ngcontent-gbn-c27="" class="material-icons">delete_outline</span></span>
+                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                            <div class="mat-button-focus-overlay"></div>
+                        </button>
+                        <button _ngcontent-gbn-c27="" class="square mat-raised-button mat-secondary"
+                                data-test="viewEntityOptionButton" mat-raised-button="" matripple="" title="View Pool"><span
+                                class="mat-button-wrapper"><span _ngcontent-gbn-c27=""
+                                                                 class="material-icons">visibility</span></span>
+                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                            <div class="mat-button-focus-overlay"></div>
+                        </button>
+                        <button _ngcontent-gbn-c27="" class="square mat-raised-button mat-secondary"
+                                data-test="editEntityOptionButton" mat-raised-button="" matripple="" title="Edit Pool"><span
+                                class="mat-button-wrapper"><span _ngcontent-gbn-c27=""
+                                                                 class="material-icons">edit</span></span>
+                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                            <div class="mat-button-focus-overlay"></div>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot role="rowgroup"
+                   class="mat-table-sticky"
+                   style="display: none;
+                   bottom: 0px;
+                   position:
+                   sticky;
+                   z-index: 10;"
+            >
+            </tfoot>
+        </table>
+
+    </div>
+    <app-detail-overlay _ngcontent-gbn-c27="" _nghost-gbn-c18="" class="ng-tns-c18-33">
+    </app-detail-overlay>
+
+</div>
