@@ -20,6 +20,7 @@ import { RegisterComponent } from './register';
 import { TestwsComponent } from './testws';
 import { PoolListComponent } from './pool-list/pool-list.component';
 import { PoolComponent } from './pool/pool.component';
+import { StatsContainerComponent } from './stats-container/stats-container.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { PoolComponent } from './pool/pool.component';
         RegisterComponent,
         TestwsComponent,
         PoolListComponent,
-        PoolComponent
+        PoolComponent,
+        StatsContainerComponent
     ],
     providers: [
         AuthGuard,
