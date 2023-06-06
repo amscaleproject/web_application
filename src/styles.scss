@@ -1080,7 +1080,7 @@ h2 {
 
 
 
-.ng-star-inserted .description a {
+.ng-star-inserted .description {
   color: #0b486b;
   font-weight: 700;
   font-size: 16px;
@@ -1092,3 +1092,14 @@ h2 {
 .app-stats-container {
   height: 310px;
 }
+
+.page-header .header-links .help-icon:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.page-header .header-links .help-icon {
+  margin: 0 0 0 auto;
+  color: #8d8d8d;
+}
+

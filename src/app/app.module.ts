@@ -24,6 +24,9 @@ import { StatsContainerComponent } from './stats-container/stats-container.compo
 import { PageHeaderComponent } from './page-header/page-header.component';
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
+import { DialogComponentComponent } from './dialog-component/dialog-component.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import {MatInputModule} from "@angular/material/input";
 
 
 @NgModule({
@@ -34,7 +37,9 @@ import { DomSanitizer } from '@angular/platform-browser';
         routing,
         FormsModule,
         BrowserAnimationsModule,
-        MatIconModule
+        MatIconModule,
+        MatDialogModule,
+        MatInputModule
     ],
     declarations: [
         AppComponent,
@@ -46,7 +51,8 @@ import { DomSanitizer } from '@angular/platform-browser';
         PoolListComponent,
         PoolComponent,
         StatsContainerComponent,
-        PageHeaderComponent
+        PageHeaderComponent,
+        DialogComponentComponent
     ],
     providers: [
         AuthGuard,
