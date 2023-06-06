@@ -22,6 +22,8 @@ import { PoolListComponent } from './pool-list/pool-list.component';
 import { PoolComponent } from './pool/pool.component';
 import { StatsContainerComponent } from './stats-container/stats-container.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
+import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 
 
 @NgModule({
@@ -31,7 +33,8 @@ import { PageHeaderComponent } from './page-header/page-header.component';
         HttpClientModule,
         routing,
         FormsModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        MatIconModule
     ],
     declarations: [
         AppComponent,
