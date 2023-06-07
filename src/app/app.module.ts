@@ -24,9 +24,10 @@ import { StatsContainerComponent } from './stats-container/stats-container.compo
 import { PageHeaderComponent } from './page-header/page-header.component';
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
-import { DialogComponentComponent } from './dialog-component/dialog-component.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatInputModule} from "@angular/material/input";
+import {OverlayModule} from "@angular/cdk/overlay";
+import { DetailOverlayComponent } from './detail-overlay/detail-overlay.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import {MatInputModule} from "@angular/material/input";
         BrowserAnimationsModule,
         MatIconModule,
         MatDialogModule,
-        MatInputModule
+        MatInputModule,
+        OverlayModule
     ],
     declarations: [
         AppComponent,
@@ -52,7 +54,7 @@ import {MatInputModule} from "@angular/material/input";
         PoolComponent,
         StatsContainerComponent,
         PageHeaderComponent,
-        DialogComponentComponent
+        DetailOverlayComponent
     ],
     providers: [
         AuthGuard,
