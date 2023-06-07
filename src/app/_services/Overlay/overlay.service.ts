@@ -14,15 +14,11 @@ export class OverlayService {
   ) {}
 
   createOverlay(content: string) {
-
-    console.log('content from createOverlay in overlay service: ', content);
-
     const overlayRef = this.overlay.create(this.getOverlayConfig());
     const componentRef = overlayRef.attach(
         new ComponentPortal(DetailOverlayComponent, null, this.createInjector(content))
     );
   }
-
   private getOverlayConfig(): OverlayConfig {
     return new OverlayConfig({
       hasBackdrop: true,
@@ -30,14 +26,6 @@ export class OverlayService {
       positionStrategy: this.overlay.position().global().centerHorizontally().centerVertically(),
     });
   }
-
-  // private createInjector(content: string): Injector {
-  //   const injectorTokens = new WeakMap<any, any>([
-  //     [DetailOverlayComponent, { content }],
-  //   ]);
-  //   return Injector.create({ parent: this.injector, providers: [], name: 'OverlayComponentInjector', });
-  // }
-
   private createInjector(content: string): Injector {
     const injectorTokens = new WeakMap<any, any>([
       [DetailOverlayComponent, { content }],
