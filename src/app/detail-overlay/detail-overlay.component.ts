@@ -6,13 +6,5 @@ import {Component, Inject, Input} from '@angular/core';
   styleUrls: ['./detail-overlay.component.css']
 })
 export class DetailOverlayComponent {
-  // @Input() content: string | undefined;
-  // constructor(@Inject('content') public content: string) {}
-
-  // constructor(@Inject()) {
-  // }
-
   constructor(@Inject('content') public content: string) {}
-
-  // isOpen = false;
 }
