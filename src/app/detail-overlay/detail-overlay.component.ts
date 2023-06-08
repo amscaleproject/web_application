@@ -1,10 +1,11 @@
 import {Component, Inject, Input} from '@angular/core';
 import {OverlayService} from "../_services/Overlay/overlay.service";
 import { trigger, state, transition, style, animate } from '@angular/animations';
-
+import { ViewEncapsulation } from '@angular/core'
 @Component({
   selector: 'app-detail-overlay',
   templateUrl: './detail-overlay.component.html',
+  encapsulation: ViewEncapsulation.None,
   styleUrls: ['./detail-overlay.component.scss'],
   animations: [
     trigger('slideInRightAnimation', [
@@ -39,11 +40,9 @@ export class DetailOverlayComponent {
   closeOverlay(){
     this.panelHided = true;
     this.bgHided = true;
-
     setTimeout(() => {
       this.OverlayService.closeOverlay();
     }, 300);
-
   }
 
 }
