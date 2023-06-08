@@ -1,8 +1,21 @@
+<div _ngcontent-inh-c18=""
+     class="overlay-detail-background
+     ng-tns-c18-5
+     ng-trigger
+     ng-trigger-fadeInOnEnter
+     ng-star-inserted"
+     [@fadeInOnEnter]
+></div>
 <div _ngcontent-hoy-c18=""
      class="overlayContainer ng-tns-c18-5 ng-trigger ng-trigger-slideInRightOnEnter ng-star-inserted"
      data-test="detailOverlay"
      [@slideInRightAnimation]
 >
+    <button (click)="hideElement()" class="btn">Hide element</button>
+
+    <div [@hideElement]="isHidden ? 'hidden' : 'visible'" class="element"></div>
+
+
     <div
             class="close"
             (click)="closeOverlay()"
