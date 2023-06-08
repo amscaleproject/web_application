@@ -1,1 +1,7 @@
-{{content}}
+<div class="overlayContainer">
+    <div
+            class="close"
+            (click)="closeOverlay()"
+    ><i class="material-icons">clear</i></div>
+    <div [innerHTML]="content"></div>
+</div>

@@ -7,6 +7,8 @@ import { DetailOverlayComponent } from "../../detail-overlay/detail-overlay.comp
   providedIn: 'root'
 })
 export class OverlayService {
+  private overlayRef: any;
+
   constructor(
       private overlay: Overlay,
       private injector: Injector,
@@ -14,11 +16,19 @@ export class OverlayService {
   ) {}
 
   createOverlay(content: string) {
-    const overlayRef = this.overlay.create(this.getOverlayConfig());
-    const componentRef = overlayRef.attach(
+    this.overlayRef = this.overlay.create(this.getOverlayConfig());
+    const componentRef = this.overlayRef.attach(
         new ComponentPortal(DetailOverlayComponent, null, this.createInjector(content))
     );
   }
+
+  closeOverlay() {
+    if (this.overlayRef) {
+      this.overlayRef.detach();
+      this.overlayRef = null;
+    }
+  }
+
   private getOverlayConfig(): OverlayConfig {
     return new OverlayConfig({
       hasBackdrop: true,
@@ -26,6 +36,7 @@ export class OverlayService {
       positionStrategy: this.overlay.position().global().centerHorizontally().centerVertically(),
     });
   }
+
   private createInjector(content: string): Injector {
     const injectorTokens = new WeakMap<any, any>([
       [DetailOverlayComponent, { content }],
@@ -36,6 +47,4 @@ export class OverlayService {
       name: 'OverlayComponentInjector',
     });
   }
-
-
 }

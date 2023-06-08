@@ -1,4 +1,5 @@
 import {Component, Inject, Input} from '@angular/core';
+import {OverlayService} from "../_services/Overlay/overlay.service";
 
 @Component({
   selector: 'app-detail-overlay',
@@ -6,5 +7,14 @@ import {Component, Inject, Input} from '@angular/core';
   styleUrls: ['./detail-overlay.component.css']
 })
 export class DetailOverlayComponent {
-  constructor(@Inject('content') public content: string) {}
+  constructor(
+      @Inject('content') public content: string,
+      public OverlayService: OverlayService
+  ) {}
+
+  closeOverlay(){
+    console.log('close overlay');
+    this.OverlayService.closeOverlay();
+  }
+
 }
