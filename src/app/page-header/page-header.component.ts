@@ -11,22 +11,26 @@ import {OverlayService} from "../_services/Overlay/overlay.service";
 export class PageHeaderComponent {
   @Input() title: string | undefined;
 
-  contentInput = `      
-      <p>Контент оверлея</p>
-      <div class="divClass">Div class content</div>      
+  contentInput = `
+    <div _ngcontent-hoy-c18="" class="overlayContentContainer">
+        <div _ngcontent-hoy-c13="" class="help-content">
+            <div _ngcontent-hoy-c13="" class="detail-overlay-header"><h2 _ngcontent-hoy-c13="">Dashboard Help Guide</h2>
+            </div>
+            <h3 _ngcontent-hoy-c13="">AttikaMove Dashboard</h3>
+            <p _ngcontent-hoy-c13="">The AttikaMove Dashboard provides a high level view into all the SDServers and
+                Nodes managed by this instance of the AttikaMove management software. The Dashboard view is the default
+                page on logging into AttikaMove.</p>
+            <p _ngcontent-hoy-c13=""><span _ngcontent-hoy-c13="" class="material-icons help-more-info">info</span> At
+                any time you may return to the Dashboard by clicking on the "CompanyMove" logo in the top left of the
+                browser.
+            </p>
+        </div>
+    </div>  
     `;
-
   constructor(public OverlayService: OverlayService  ) {}
 
   showOverlay(content: string) {
     console.log('show overlay');
     this.OverlayService.createOverlay(content);
   }
-  // closeOverlay(){
-  //   console.log('close overlay');
-  //   this.OverlayService.closeOverlay();
-  // }
-
-
-
 }

@@ -640,42 +640,6 @@ noHeader {
 }
 
 
-.overlay-detail-background[_ngcontent-skr-c18] {
-  position: fixed;
-  background: rgba(7, 33, 49, .6);
-  height: 100%;
-  width: 100%;
-  display: block;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 1
-}
-
-.overlay-detail-background[_ngcontent-skr-c18]:hover {
-  cursor: pointer
-}
-
-.overlayContainer[_ngcontent-skr-c18] {
-  background: #fff;
-  height: 100%;
-  width: 500px;
-  display: block;
-  position: fixed;
-  right: 0;
-  top: 0;
-  border-left: 1px solid #ddd;
-  z-index: 1;
-  padding: 15px;
-  box-shadow: 0 -1px 6px rgba(0, 0, 0, .4);
-  overflow-y: auto
-}
-
-.overlayContainer[_ngcontent-skr-c18] .close[_ngcontent-skr-c18] i[_ngcontent-skr-c18] {
-  color: #999;
-  cursor: pointer
-}
 
 .toolbar-overlay[_ngcontent-skr-c2] {
   position: absolute;

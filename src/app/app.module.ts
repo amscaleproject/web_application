@@ -41,7 +41,8 @@ import { DetailOverlayComponent } from './detail-overlay/detail-overlay.componen
         MatIconModule,
         MatDialogModule,
         MatInputModule,
-        OverlayModule
+        OverlayModule,
+        BrowserAnimationsModule
     ],
     declarations: [
         AppComponent,
