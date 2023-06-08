@@ -11,54 +11,39 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
       transition(':enter', [
         style({ transform: 'translateX(100%)' }),
         animate('0.3s ease-out', style({ transform: 'translateX(0%)' }))
+      ]),
+      transition(':leave', [
+        style({ transform: 'translateX(0%)' }),
+        animate('0.3s ease-out', style({ transform: 'translateX(100%)' }))
       ])
     ]),
     trigger('fadeInOnEnter', [
       transition(':enter', [
         style({ opacity: 0 }),
         animate('0.3s ease-in', style({ opacity: 1 }))
-      ])
-    ]),
-    trigger('hideElement', [
-      state('hidden', style({
-        opacity: 0,
-        height: 0,
-        padding: 0,
-        margin: 0,
-        display: 'none'
-      })),
-      state('visible', style({
-        opacity: 1,
-        height: '*',
-        padding: '*',
-        margin: '*',
-        display: 'block'
-      })),
-      transition('visible => hidden', [
-        animate('0.3s')
       ]),
-      transition('hidden => visible', [
-        animate('0.3s')
-      ])
+      transition(':leave', [
+        style({ opacity: 1 }),
+        animate('0.3s ease-in', style({ opacity: 0 }))
+      ]),
     ])
   ]
 })
 export class DetailOverlayComponent {
-  isHidden = false;
+  panelHided = false;
+  bgHided = false;
   constructor(
       @Inject('content') public content: string,
       public OverlayService: OverlayService
   ) {}
-  hideElement() {
-    this.isHidden = true;
-  }
   closeOverlay(){
-    console.log('close overlay');
+    this.panelHided = true;
+    this.bgHided = true;
 
+    setTimeout(() => {
+      this.OverlayService.closeOverlay();
+    }, 300);
 
-    this.OverlayService.closeOverlay();
   }
-
-
 
 }

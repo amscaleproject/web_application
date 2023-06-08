@@ -17,19 +17,13 @@ export class OverlayService {
     this.overlayRef = this.overlay.create(this.getOverlayConfig());
     const componentRef = this.overlayRef.attach(
         new ComponentPortal(DetailOverlayComponent,
-            null,
-            this.createInjector(content))
+        null,
+        this.createInjector(content))
     );
   }
   closeOverlay() {
     if (this.overlayRef) {
-      const animation = trigger('fadeOut', [
-        transition(':leave', [
-          animate('0.3s', style({ opacity: 0 }))
-        ])
-      ]);
-      const component = this.overlayRef.detach();
-      component.instance.overlayAnimation = animation;
+      this.overlayRef.detach();
       this.overlayRef = null;
     }
   }
@@ -38,9 +32,9 @@ export class OverlayService {
       hasBackdrop: true,
       backdropClass: 'cdk-overlay-transparent-backdrop',
       positionStrategy: this.overlay.position().
-      global().
-      right().
-      centerVertically(),
+        global().
+        right().
+        centerVertically(),
     });
   }
   private createInjector(content: string): Injector {

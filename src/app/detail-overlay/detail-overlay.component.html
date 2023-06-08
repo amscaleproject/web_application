@@ -5,20 +5,20 @@
      ng-trigger-fadeInOnEnter
      ng-star-inserted"
      [@fadeInOnEnter]
+     *ngIf="!bgHided"
 ></div>
+
 <div _ngcontent-hoy-c18=""
      class="overlayContainer ng-tns-c18-5 ng-trigger ng-trigger-slideInRightOnEnter ng-star-inserted"
      data-test="detailOverlay"
      [@slideInRightAnimation]
+     *ngIf="!panelHided"
 >
-    <button (click)="hideElement()" class="btn">Hide element</button>
 
-    <div [@hideElement]="isHidden ? 'hidden' : 'visible'" class="element"></div>
+    <div class="close" (click)="closeOverlay()">
+        <i class="material-icons">clear</i>
+    </div>
 
-
-    <div
-            class="close"
-            (click)="closeOverlay()"
-    ><i class="material-icons">clear</i></div>
     <div [innerHTML]="content"></div>
+
 </div>
