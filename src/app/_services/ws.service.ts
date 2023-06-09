@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { webSocket, WebSocketSubject } from 'rxjs/webSocket';
 import {ExchangeService} from "./exchange.service";
+import { cloneDeep } from 'lodash';
 
 export interface MessageDataHome {
   message: string;
@@ -14,6 +15,8 @@ export class WsService {
 
   private socket$!: WebSocketSubject<any>;
   public receivedData: any;
+  public initResponse: any;
+  public helpContent: any;
   public activityLogKeysAr: any;
   public alertsKeysAr: any;
 
@@ -34,10 +37,16 @@ export class WsService {
         if(sendKey) this.send( sendMock[sendKey] );
 
         if( this.receivedData.response.hasOwnProperty("configTree") ) {
-          this.activityLogKeysAr = Object.keys(res.response?.liveTree?.activityLog ?? {});
-          this.alertsKeysAr = Object.keys(res.response?.liveTree?.alerts ?? {});
+          this.initResponse = cloneDeep(this.receivedData.response);
+          this.activityLogKeysAr = Object.keys(this.initResponse?.liveTree?.activityLog ?? {});
+          this.alertsKeysAr = Object.keys(this.initResponse?.liveTree?.alerts ?? {});
         }
 
+        if( this.receivedData.response.hasOwnProperty("root") ) {
+          this.helpContent = cloneDeep(this.receivedData.response);
+        }
+
+        console.log('this.helpContent: ', this.helpContent);
 
 
       });

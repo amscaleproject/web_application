@@ -40,8 +40,10 @@ export class ExchangeService {
         return 'auth_login';
       }
     }
+
     if( res.response?.liveTree?.auth?.sessions?.current?.auth_method  == "config" )
       return 'version';
+
     if (
         (res.response != undefined) &&
         ( res.response[0] == 'v')

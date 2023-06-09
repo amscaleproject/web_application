@@ -23,7 +23,7 @@
                             <div _ngcontent-skr-c16="" class="activityLogItem"
                                  data-test="activityLogItem">
                                 <p _ngcontent-skr-c16="" class="date">
-                                    {{ WsService.receivedData?.response?.liveTree?.activityLog[logItemKey].timestamp | date: 'dd/MM/yyyy'}}
+                                    {{ WsService.initResponse?.liveTree?.activityLog[logItemKey].timestamp | date: 'dd/MM/yyyy'}}
                                 </p>
                                 <p
                                         _ngcontent-skr-c16=""
@@ -31,14 +31,13 @@
                                         data-test="text"
                                 >
                                     {{ WsService.
-                                        receivedData?.
-                                        response?.
+                                        initResponse?.
                                         liveTree?.
                                         activityLog[logItemKey].
                                         localization?.ru?.
                                         eventTitle
                                     }}
-                                    {{ WsService.receivedData?.response?.liveTree?.activityLog[logItemKey].entityName }}
+                                    {{ WsService.initResponse?.liveTree?.activityLog[logItemKey].entityName }}
 
                                 </p>
                             </div>
@@ -79,10 +78,10 @@
 
                                 <div _ngcontent-skr-c17="">
                                     <p _ngcontent-skr-c17="" class="time-stamp">
-                                        {{ WsService.receivedData?.response?.liveTree?.alerts[alertItemKey].timestamp | date: 'dd/MM/yyyy'}}
+                                        {{ WsService.initResponse?.liveTree?.alerts[alertItemKey].timestamp | date: 'dd/MM/yyyy'}}
                                     </p>
                                     <p _ngcontent-skr-c17="">
-                                        {{ WsService.receivedData?.response?.liveTree?.alerts[alertItemKey].description }}
+                                        {{ WsService.initResponse?.liveTree?.alerts[alertItemKey].description }}
                                     </p>
                                 </div>
 
