@@ -3,7 +3,6 @@ import {WsService} from '../_services';
 
 @Component({
     templateUrl: 'home.component.html'
-
 })
 export class HomeComponent implements OnInit {
     pageTitle: string;
@@ -30,5 +29,10 @@ export class HomeComponent implements OnInit {
         this.WsService.connect();
         this.pageTitle = 'Dashboard'
     }
-    ngOnInit() {}
+    ngOnInit() {
+        let getHelp = {"read":"help:home:en","correlator":2103708213};
+        setTimeout(() => {
+            this.WsService.send(getHelp);
+        }, 300);
+    }
 }

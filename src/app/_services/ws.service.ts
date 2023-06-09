@@ -6,13 +6,12 @@ export interface MessageDataHome {
   message: string;
   time?: string;
 }
-
 const BACK_URL = "ws://172.17.0.1:5000/tree";
-
 @Injectable({
   providedIn: 'root',
 })
 export class WsService {
+
   private socket$!: WebSocketSubject<any>;
   public receivedData: any;
   public activityLogKeysAr: any;
@@ -38,6 +37,9 @@ export class WsService {
           this.activityLogKeysAr = Object.keys(res.response?.liveTree?.activityLog ?? {});
           this.alertsKeysAr = Object.keys(res.response?.liveTree?.alerts ?? {});
         }
+
+
+
       });
 
     }
