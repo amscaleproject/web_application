@@ -1,16 +1,22 @@
 <div _nghost-gbn-c27="" class="app-page-pool-list ng-star-inserted">
 
-    <div _ngcontent-gbn-c27="" class="page-header list-page">
-        <div _ngcontent-gbn-c27="" class="header-links"><h1 _ngcontent-gbn-c27="">All Pools</h1><span
-                _ngcontent-gbn-c27="" class="material-icons help-icon">help</span></div>
-        <div _ngcontent-gbn-c27="" class="header-actions">
-            <button _ngcontent-gbn-c27="" data-test="createPoolButton" mat-raised-button="" matripple=""
-                    class="mat-raised-button mat-gradient"><span class="mat-button-wrapper">Create Pool</span>
-                <div class="mat-button-ripple mat-ripple" matripple=""></div>
-                <div class="mat-button-focus-overlay"></div>
-            </button>
-        </div>
-    </div>
+<!--    <div _ngcontent-gbn-c27="" class="page-header list-page">-->
+<!--        <div _ngcontent-gbn-c27="" class="header-links"><h1 _ngcontent-gbn-c27="">All Pools</h1><span-->
+<!--                _ngcontent-gbn-c27="" class="material-icons help-icon">help</span></div>-->
+<!--        <div _ngcontent-gbn-c27="" class="header-actions">-->
+<!--            <button _ngcontent-gbn-c27="" data-test="createPoolButton" mat-raised-button="" matripple=""-->
+<!--                    class="mat-raised-button mat-gradient"><span class="mat-button-wrapper">Create Pool</span>-->
+<!--                <div class="mat-button-ripple mat-ripple" matripple=""></div>-->
+<!--                <div class="mat-button-focus-overlay"></div>-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <app-page-header
+            [title]="pageTitle"
+            [contentInput]="helpContent"
+    ></app-page-header>
+
 
     <app-stats-container></app-stats-container>
 

@@ -133,3 +133,40 @@ body {
   font-size: 16px;
   vertical-align: middle;
 }
+
+.overlayContentContainer .help-content ol li, .overlayContentContainer .help-content ul li {
+  font-size: 13px;
+  font-weight: 400;
+  word-wrap: break-word;
+  color: #333;
+}
+
+.overlayContentContainer .help-content p .help-alert-info {
+  color: #f5a851;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.overlayContentContainer .help-content h3 {
+  margin: 0;
+}
+
+.overlayContentContainer h3 {
+  margin: 20px 0 0;
+  padding: 10px 5px 0;
+  border-top: 1px solid #cfe0e8;
+}
+
+.overlayContentContainer .help-content h4 {
+  margin: 0;
+  padding: 0 5px;
+  font-size: 14px;
+
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+
+}
