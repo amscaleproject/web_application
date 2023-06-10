@@ -239,7 +239,15 @@
                                                 </div><!----><!----><!----></li>
                                         </div>
 
+                                        <div _ngcontent-skr-c3="" class="mat-tree-node ng-star-inserted"
+                                             mattreenodetoggle="" aria-expanded="false" aria-level="0" role="treeitem">
+                                            <button (click)="setLanguage('en')">English</button>
+                                            <button (click)="setLanguage('ru')">Russian</button>
+                                            <p>Current language: {{ currentLanguage }}</p>
+                                        </div>
+
                                     </div>
+
                                 </div>
 
                             </div>
@@ -247,9 +255,7 @@
 
                             <div _ngcontent-skr-c0="" _nghost-skr-c4="" class="app-content-container">
 
-                                <button (click)="setLanguage('en')">English</button>
-                                <button (click)="setLanguage('ru')">Russian</button>
-                                <p>Current language: {{ currentLanguage }}</p>
+
 
                                 <router-outlet></router-outlet>
 
