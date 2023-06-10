@@ -35,8 +35,11 @@ export class WsService {
       this.send( sendMock.auth );
 
       this.socket$.subscribe((res: any) => {
+
         this.receivedData = res;
+
         sendKey = exchServ.getKey(res);
+
         if(sendKey) this.send( sendMock[sendKey] );
 
         if( this.receivedData.response.hasOwnProperty("configTree") ) {
@@ -44,14 +47,9 @@ export class WsService {
           this.activityLogKeysAr = Object.keys(this.initResponse?.liveTree?.activityLog ?? {});
           this.alertsKeysAr = Object.keys(this.initResponse?.liveTree?.alerts ?? {});
         }
-
         if( this.getType == 'help'){
-          this.helpContentStr = this.receivedData.response;
-          console.log('this.helpContentStr: ', this.helpContentStr)
+          this.helpContentStr = `<div class="help-content">${this.receivedData.response}</div>`;
         }
-
-
-
       });
 
     }
