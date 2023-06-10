@@ -1070,3 +1070,20 @@ h2 {
 button {
   cursor: pointer;
 }
+
+.langButton {
+  border-radius: 5px;
+  margin: 10px;
+}
+.curLangInfo {
+  margin: 10px;
+}
+
+.curLangVal {
+  margin-left: 10px;
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 5px;
+  border: #00376e solid 1px;
+  box-shadow: 1px 1px 10px 1px #000 inset;
+}
