@@ -7,17 +7,16 @@ import {LanguageService} from "../_services/LanguageService/language-service.ser
 })
 export class HomeComponent implements OnInit {
     pageTitle: string;
+    currentLanguage: string;
     constructor(
         public WsService: WsService,
         private languageService: LanguageService
     ) {
         this.WsService.connect();
         this.pageTitle = 'Dashboard';
-
         this.languageService.getCurrentLanguage().subscribe(lang => {
-            console.log('cur lang from home: ', lang);
-            this.setLang(lang);
-
+            this.currentLanguage = lang;
+            this.setLang(this.currentLanguage);
         });
     }
     setLang(lang:string = 'en') {
@@ -27,6 +26,6 @@ export class HomeComponent implements OnInit {
         }, 300);
     }
     ngOnInit() {
-        this.setLang();
+        this.setLang(this.currentLanguage);
     }
 }
