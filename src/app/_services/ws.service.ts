@@ -17,6 +17,9 @@ export class WsService {
   public receivedData: any;
   public initResponse: any;
   public helpContent: any;
+  public anyResponse: any;
+  public getType: string = '';
+  public helpContentStr: string = '';
   public activityLogKeysAr: any;
   public alertsKeysAr: any;
 
@@ -42,11 +45,11 @@ export class WsService {
           this.alertsKeysAr = Object.keys(this.initResponse?.liveTree?.alerts ?? {});
         }
 
-        if( this.receivedData.response.hasOwnProperty("root") ) {
-          this.helpContent = cloneDeep(this.receivedData.response);
+        if( this.getType == 'help'){
+          this.helpContentStr = this.receivedData.response;
+          console.log('this.helpContentStr: ', this.helpContentStr)
         }
 
-        console.log('this.helpContent: ', this.helpContent);
 
 
       });
@@ -56,6 +59,12 @@ export class WsService {
 
   send(obj: any) {
     let socket = this.socket$;
+    socket.next(obj);
+  }
+
+  sendGetXmlNodeStr(obj: any) {
+    let socket = this.socket$;
+    this.getType = 'help';
     socket.next(obj);
   }
 

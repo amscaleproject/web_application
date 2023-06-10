@@ -32,7 +32,8 @@ export class HomeComponent implements OnInit {
     ngOnInit() {
         let getHelp = {"read":"help:home:en","correlator":2103708213};
         setTimeout(() => {
-            this.WsService.send(getHelp);
+            // this.WsService.send(getHelp);
+            this.WsService.sendGetXmlNodeStr(getHelp);
         }, 300);
     }
 }
