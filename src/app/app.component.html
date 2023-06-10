@@ -246,8 +246,12 @@
 
 
                             <div _ngcontent-skr-c0="" _nghost-skr-c4="" class="app-content-container">
-                                <router-outlet></router-outlet>
 
+                                <button (click)="setLanguage('en')">English</button>
+                                <button (click)="setLanguage('ru')">Russian</button>
+                                <p>Current language: {{ currentLanguage }}</p>
+
+                                <router-outlet></router-outlet>
 
 
                             </div>

@@ -28,6 +28,7 @@ import {MatDialogModule} from "@angular/material/dialog";
 import {MatInputModule} from "@angular/material/input";
 import {OverlayModule} from "@angular/cdk/overlay";
 import { DetailOverlayComponent } from './detail-overlay/detail-overlay.component';
+import {LanguageService} from "./_services/LanguageService/language-service.service";
 
 
 @NgModule({
@@ -64,6 +65,7 @@ import { DetailOverlayComponent } from './detail-overlay/detail-overlay.componen
         UserService,
         WebSocketService,
         WsService,
+        LanguageService,
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
         { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 

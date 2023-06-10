@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {MatDialog} from "@angular/material/dialog";
+import {LanguageService} from "./_services/LanguageService/language-service.service";
 
 
 @Component({
@@ -8,13 +9,16 @@ import {MatDialog} from "@angular/material/dialog";
 })
 
 export class AppComponent {
+    currentLanguage: string;
+    constructor(private languageService: LanguageService) {
+        this.languageService.getCurrentLanguage().subscribe(lang => {
+            this.currentLanguage = lang;
+        });
+    }
+    setLanguage(lang: string): void {
+        this.languageService.setCurrentLanguage(lang);
+        this.currentLanguage = lang;
+    }
 
-    constructor(public dialog: MatDialog) {}
 
-    // openDialog() {
-    //     const dialogRef = this.dialog.open(DialogComponentComponent, {
-    //         width: '400px',
-    //         position: { right: '0' }
-    //     });
-    // }
 }
