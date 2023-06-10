@@ -12,10 +12,13 @@ export class HomeComponent implements OnInit {
         this.WsService.connect();
         this.pageTitle = 'Dashboard'
     }
-    ngOnInit() {
-        let getHelp = {"read":"help:home:en","correlator":2103708213};
+    setLang(lang:string = 'en') {
+        let getHelp = {"read":`help:home:${lang}`,"correlator":2103708213};
         setTimeout(() => {
             this.WsService.sendGetXmlNodeStr(getHelp);
         }, 300);
+    }
+    ngOnInit() {
+        this.setLang();
     }
 }
