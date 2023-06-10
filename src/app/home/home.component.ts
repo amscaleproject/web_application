@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
         this.pageTitle = 'Dashboard'
     }
     ngOnInit() {
-        let getHelp = {"read":"help:home:ru","correlator":2103708213};
+        let getHelp = {"read":"help:home:en","correlator":2103708213};
         setTimeout(() => {
             this.WsService.sendGetXmlNodeStr(getHelp);
         }, 300);
