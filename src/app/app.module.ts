@@ -29,6 +29,7 @@ import {MatInputModule} from "@angular/material/input";
 import {OverlayModule} from "@angular/cdk/overlay";
 import { DetailOverlayComponent } from './detail-overlay/detail-overlay.component';
 import {LanguageService} from "./_services/LanguageService/language-service.service";
+import {NgTerminalModule} from "ng-terminal";
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import {LanguageService} from "./_services/LanguageService/language-service.serv
         MatDialogModule,
         MatInputModule,
         OverlayModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        NgTerminalModule
     ],
     declarations: [
         AppComponent,
