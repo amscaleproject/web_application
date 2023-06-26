@@ -6,39 +6,41 @@ import { NgTerminal } from 'ng-terminal';
   templateUrl: './terminal.component.html',
 })
 export class TerminalComponent implements AfterViewInit {
-  @ViewChild('term', { static: false }) child: NgTerminal;
+  @ViewChild('term', { static: false }) child!: NgTerminal;
 
-  private socket: WebSocket;
-  private prompt = 'this prompt 250623';
+  private socket!: WebSocket;
+  private prompt = '> ';
 
-  // Необходимо добавить свойство inputData
   inputData: string = '';
 
   ngOnInit() {
-    // Создание соединения с вебсокетом
+
     this.socket = new WebSocket('ws://172.17.0.1:5000/terminal');
 
-    // Обработка ответа от сервера
     this.socket.onmessage = (event) => {
-      const message = event.data;
-      this.child.write(`\n${message}\n${this.prompt}`);
+      const message = event.data.trim();
+      this.child.write(`\r\n${message}\r\n${this.prompt}`);
+    };
+
+    this.socket.onopen = () => {
+      this.child.write(this.prompt);
     };
   }
 
   ngAfterViewInit() {
     this.child.onData().subscribe((input) => {
       if (input === '\r') {
-        // Отправка данных через вебсокет на сервер
         this.socket.send(this.inputData);
-        this.inputData = ''; // очищаем буфер ввода
+        this.inputData = '';
       } else if (input === '\u007f') {
         if (this.inputData.length > 0) {
           this.inputData = this.inputData.slice(0, -1);
           this.child.write('\b \b');
         }
       } else if (input === '\u0003') {
+        // Handling Ctrl+C
         this.child.write('^C');
-        this.child.write(this.prompt);
+        this.child.write(`\r\n${this.prompt}`);
       } else {
         this.inputData += input;
         this.child.write(input);
