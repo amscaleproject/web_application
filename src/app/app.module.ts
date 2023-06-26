@@ -30,6 +30,7 @@ import {OverlayModule} from "@angular/cdk/overlay";
 import { DetailOverlayComponent } from './detail-overlay/detail-overlay.component';
 import {LanguageService} from "./_services/LanguageService/language-service.service";
 import {NgTerminalModule} from "ng-terminal";
+import { TerminalComponent } from './terminal/terminal.component';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import {NgTerminalModule} from "ng-terminal";
         PoolComponent,
         StatsContainerComponent,
         PageHeaderComponent,
-        DetailOverlayComponent
+        DetailOverlayComponent,
+        TerminalComponent
     ],
     providers: [
         AuthGuard,
