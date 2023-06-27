@@ -19,7 +19,9 @@ export class TerminalComponent implements AfterViewInit {
 
     this.socket.onmessage = (event) => {
       const message = event.data.trim();
-      this.child.write(`\r\n${message}\r\n${this.prompt}`);
+      this.child.write(`\r\n`);
+      this.child.write(message.split('\n').join('\r\n'));
+      this.child.write(`\r\n${this.prompt}`);
     };
 
     this.socket.onopen = () => {
