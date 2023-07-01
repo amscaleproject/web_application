@@ -49,4 +49,7 @@ export class TerminalComponent implements AfterViewInit {
       }
     });
   }
+
+
+
 }
